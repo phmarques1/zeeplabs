@@ -1,0 +1,1510 @@
+html, body {
+  margin: 0;
+  font-family: 'adelle-sans','serif','Open Sans';
+  text-decoration: none; 
+  height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+/**
+
+
+
+
+
+
+
+**/
+
+
+
+
+img {
+  max-width: 100%;
+}
+
+br {
+  display: block;
+  content: "";
+  margin: 25px 0;
+}
+
+a {
+  color: #000;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 70px;
+    background: transparent;
+    color: #666;
+    z-index: 1000000;
+}
+header.clonedHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transform: translateY(-100%);
+    border-bottom: 1px solid rgb(210,210,210);
+    transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+}
+
+body.down header.clonedHeader {
+    transform: translateY(0);
+}
+
+.icons {
+  background-size: 50px 50px;
+  width: 25px;
+  height: 25px;
+  float: left;
+  opacity: 0.8;
+  margin: 20px 5px 0;
+}
+
+.icons:hover {
+  opacity: 1.0;
+}
+
+.icons-fixed {
+  background-size: 50px 50px;
+  width: 25px;
+  height: 25px;
+  float: left;
+  opacity: 0.8;
+  margin: 8px 10px 0 0;
+}
+
+.icon-medium-fixed {
+  margin: 8px 0 0 0;
+}
+
+.icons-fixed:hover {
+  opacity: 1.0;
+}
+
+
+.top-fixed {
+  max-width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 1% 0;
+}
+
+.profile-fixed {
+  background-size: 74px 74px;
+  width: 37px;
+  height: 37px;
+}
+
+.profile-hidden {
+  margin: 12px auto 0;
+  text-align: center;
+  background: url('../img/profile-fixed@2x.png') no-repeat center;
+  background-size: 37px 37px;
+  width: 37px;
+  height: 37px;
+}
+
+.contact-fixed {
+  font-family: 'Open Sans', 'sans serif';
+  margin: 12px 10px 0;
+  text-align: center;
+  padding: 0.6em 1.5em;
+  background-color: transparent;
+  text-shadow: none;
+  color: #605ca8;
+  border: 2px solid #605ca8;
+  border-radius: 4px;
+  text-decoration: none;
+  float: right;
+  line-height: 20px;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.contact-fixed:hover {
+  opacity: 1.0;
+}
+
+.contact-top {
+  font-family: 'Open Sans', 'sans serif';
+  margin: 17px 10px;
+  text-align: center;
+  padding: 0.6em 1.5em;
+  background-color: transparent;
+  text-shadow: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  line-height: 20px;
+  float: right;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+}
+
+.contact-top:hover {
+  background-color: rgba(0,0,0,.4);
+}
+
+.background {
+    background: url('../img/bg.png');
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+.top {
+  min-width: 100%;
+  max-height: 70px;
+  padding: 0 1% 0;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 100000;
+}
+
+.fullscreen,
+.content-a {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height:auto;
+    min-height:100%;
+}
+
+/* content centering styles */
+.content-a {
+  display:table;
+}
+.content-b {
+  display:table-cell;
+  position:relative;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.arrows {
+    background-size: 30px 16px;
+    max-height: 15px;
+    bottom: 5%;
+    left:0;
+    right:0;
+    margin: 0 auto 0;
+    position: absolute;
+    text-align: center;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.logo-white, .logo-black {
+  margin: 20px 10px 0;
+  background-size: 242px 42px;
+  width: 141px;
+  height: 21px;
+}
+
+h1 {
+  font-family: 'adelle-sans', 'sans serif';
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 5.5em;
+  font-weight: 800;
+  letter-spacing: 3px;
+  line-height: 105px;
+}
+
+.disruptive {
+  color: #FF303F;
+}
+
+.solutions {
+  color: #FFCC00;
+}
+
+.subtitle {
+  max-width: 500px;
+  margin: 20px auto 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 28px;
+}
+
+.quote {
+  text-align: center;
+  font-size: 1.15em;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+}
+
+.about {
+  width: 100%;
+  height: 1220px;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(220,220,220);
+  text-align: center;
+  padding: 60px 8% 0;
+  overflow: hidden;
+}
+
+.intro {
+  font-size: 1.2em;
+  color: black;
+  font-weight: 300;
+  margin-bottom: -5px;
+}
+
+.powered-by {
+  margin: 40px auto 0;
+  max-width: 960px;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.7;
+  font-weight: 800;
+  letter-spacing: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.about-us {
+  margin: 40px auto 0;
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.05em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: rgb(100,100,100);
+}
+
+/**.flat-devices {
+  margin-top: 60px;
+  background-size: 898px 358px;
+  width: 449px; 
+  height: 179px;
+}**/
+
+.flat-devices {
+  margin-top: 60px;
+  background-size: 1174px 626px;
+  max-height: 313px;
+}
+
+.core-services {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.core-title, 
+.recent-title {
+  margin: 80px auto 0;
+  text-align: left;
+  font-size: 0.95em;
+  line-height: 1.7;
+  font-weight: 600;
+  color: black;
+}
+
+.recent-title {
+  margin-top: 50px;
+}
+
+.love-to-do,
+.recent-work {
+  color: rgb(120,120,120);
+  font-weight: 300;
+}
+
+.line-separator-grey {
+  height: 1px;
+  background: rgb(210,210,210);
+  border-bottom: 1px solid rgb(210,210,210);
+}
+
+.services-flexbox {
+  display: flex;
+  margin: 55px auto 0;
+  max-height: 960px;
+}
+
+.prod-strategy, 
+.ui-ux-design, 
+.development {
+  flex-grow: 1;
+}
+
+.prod-strategy-icon, .dev-icon {
+  background-size: 92px 92px;
+  height: 46px;
+  width: 46px;
+}
+
+.design-icon {
+  background-size: 90px 92px;
+  height: 45px;
+  width: 46px;
+}
+
+.strategy-title, 
+.design-title,
+.dev-title {
+  margin: 15px auto;
+  font-weight: 600;
+}
+
+.services-description {
+  max-width: 250px;
+  margin: 0 auto;
+  font-size: 0.9em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: rgb(120,120,120); 
+}
+
+.recent {
+
+/*background: rgb(35,43,59); 
+background: -moz-linear-gradient(top,  rgba(35,43,59,1) 0%, rgba(69,83,111,1) 100%); 
+background: -webkit-linear-gradient(top,  rgba(35,43,59,1) 0%,rgba(69,83,111,1) 100%); 
+background: linear-gradient(to bottom,  rgba(35,43,59,1) 0%,rgba(69,83,111,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232b3b', endColorstr='#45536f',GradientType=0 );*/
+
+  
+  background: rgb(28,28,28); 
+  background: -moz-linear-gradient(top,  rgba(28,28,28,1) 0%, rgba(56,56,56,1) 100%); 
+  background: -webkit-linear-gradient(top,  rgba(28,28,28,1) 0%,rgba(56,56,56,1) 100%); 
+  background: linear-gradient(to bottom,  rgba(28,28,28,1) 0%,rgba(56,56,56,1) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#383838',GradientType=0 );
+   
+  width: 100%;
+  height: 2220px;
+  text-align: center;
+  padding: 30px 8% 0;
+  overflow: hidden;
+}
+
+.recent-title {
+  color: rgb(255,204,0);
+}
+
+.recent-work {
+  color: #8A8A8A;
+}
+
+.line-separator-dark {
+  height: 1px;
+  background: rgb(140,140,140);
+  border-bottom: 1px solid rgb(140,140,140);
+}
+
+.zep {
+  margin-top: 50px;
+  background-size: 1494px 686px;
+  max-height: 343px;
+}
+
+.zep-title, .flesy-title, .agroeste-title, .sensorize-title {
+  max-width: 960px;
+  margin: 50px auto 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.flesy-container, .agroeste-container {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  margin-top: 70px;
+  align-items: center;
+}
+
+.sensorize-container {
+  margin-top: 100px;
+}
+
+.zep-description, .flesy-description, .agroeste-description, .sensorize-description {
+  max-width: 600px;
+  margin: 0 auto 45px;
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.flesy-title, .flesy-description, .agroeste-title, .agroeste-description {
+  text-align: left;
+}
+
+.flesy-info, .agroeste-info {
+  flex-grow: 1;
+}
+
+.flesy-title, .agroeste-title {
+  margin-top: 0;
+}
+
+.flesy-description, .agroeste-description {
+  max-width: 420px;
+  margin: 0;
+}
+
+.flesy-img {
+  background-size: 916px 1062px;
+  max-height: 531px;
+}
+
+
+.play-btn, .download-flesy, .download-agroeste, .sensorize-btn {
+  margin: 17px 10px;
+  text-align: center;
+  padding: 0.8em 3em;
+  background-color: transparent;
+  text-shadow: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  line-height: 20px;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+}
+
+.download-flesy, .download-agroeste {
+  margin: 25px auto;
+  float: left;
+}
+
+.play-btn:hover, .download-flesy:hover, .download-agroeste:hover, .sensorize-btn:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+.agroeste-info {
+  order: 2;
+}
+
+.sensorize-img {
+  background-size: 1604px 1022px;
+  max-height: 511px;
+}
+
+
+.sensorize {
+  margin-top: 65px;
+  background-size: 1618px 1004px;
+  max-height: 502px;
+}
+
+
+
+.mission {
+  height: 490px;
+}
+
+.mission-statement {
+  font-family: 'reklame-script';
+  margin: 70px auto 0;
+  max-width: 840px;
+  text-align: center;
+  font-size: 3.6em;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #3cb878;
+}
+
+.rocket-container {
+  max-width: 960px;
+  text-align: center;
+}
+
+.rocket-img {
+  background-size: 126px 226px;
+  max-height: 113px;
+  margin: 50px auto;
+}
+
+.contact-wrap {
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 53px;
+  background-color: #29c55a;
+  line-height: 5px;
+}
+
+.chat {
+  font-size: 3em;
+  color: #fff;
+}
+
+.more {
+  margin: 0 0 65px;
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #fff;
+}
+
+.contact-down {
+  font-family: 'Open Sans', 'sans serif';
+  text-align: center;
+  padding: 0.8em 1.6em;
+  background-color: transparent;
+  text-shadow: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  line-height: 20px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  opacity: 1.0;
+}
+
+.contact-down:hover {
+  background-color: #22be53;
+}
+
+footer {
+  padding: 0 2%;
+  border-top: 1px #e6e6e6 solid;
+  background-color: #fff;
+  color: #a0a0a0;
+  text-align: left;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  font-size: 0.85em;
+}
+
+.footer-wrap {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.email-contact {
+  align-self: center;
+}
+
+.footer-right {
+  flex-grow: 1;
+  align-self: center;
+  text-align: center;
+}
+
+.mixpanel {
+  align-self: center;
+}
+.mix-wrap {
+  flex-grow: 1;
+}
+
+.contact-bottom:hover {
+  opacity: 0.85;
+}
+
+.contact-bottom:before {
+  content: "";
+  background-image: url('../img/email.png');
+  background-size: 20px 14px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.heart {
+  color: #ed0f04;
+}
+
+
+/**************************************************************** 
+*****************************************************************
+*****************************************************************
+
+IMAGE AND ICONS @2X DOWNSIZING
+
+*****************************************************************
+*****************************************************************
+****************************************************************/
+
+
+
+.green-line {
+  background-size: 550px 16px;
+  width: 225px;
+  height: 8px;
+}
+
+
+
+
+
+
+
+
+
+/**************************************************************** 
+*****************************************************************
+*****************************************************************
+
+MEDIA QUERIES
+
+*****************************************************************
+*****************************************************************
+****************************************************************/
+
+@media screen and (max-width: 1153px) and (min-width: 769px) {
+
+.top {
+  display: block;
+}
+
+.note {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 1060px;
+}
+
+.left-elem {
+  opacity: 0.23;
+}
+
+.right-elem {
+  opacity: 0.23;
+}
+
+.zep-wrap {
+  padding-top: 50px;
+  height: 710px;
+}
+
+.flesy-container {
+  flex-direction: column;
+}
+
+.flesy-text {
+  max-width: 700px;
+}
+
+.flesy-d {
+  display: none;
+}
+
+.flesy-t {
+  margin-top: 45px;
+  margin-right: 0;
+  order: 1;
+  padding: 0 5% 0;
+}
+
+.flesy-logo {
+  margin-top: 50px;
+}
+
+.floating {
+  padding: 0 1% 0;
+}
+
+.sensorize-wrap {
+  padding-top: 60px;
+  height: 770px;
+}
+
+.sensorize-description {
+  text-align: center;
+  margin: 0 auto 30px;
+  float: none;
+}
+
+.sensorize-mockup {
+  float: none;
+}
+
+.sensorize-logo {
+  padding: 0 8% 0;
+}
+
+.sensorize-text {
+  text-align: center;
+}
+
+footer {
+  padding-top: 28px;
+}
+
+.foot {
+  font-size: 1.25em;
+}
+
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+.top {
+  display: block;
+}
+
+.note {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 1060px;
+}
+
+.desc {
+  font-size: 1.8em;
+    margin-bottom: 50px;
+}
+
+.quote {
+  padding: 0 10% 0;
+  font-size: 1.4em;
+}
+
+.left-elem {
+  opacity: 0.23;
+}
+
+.right-elem {
+  opacity: 0.23;
+}
+
+.zep-wrap {
+  padding-top: 50px;
+  height: 710px;
+}
+
+.flesy-container {
+  flex-direction: column;
+}
+
+.flesy-text {
+  max-width: 700px;
+}
+
+.flesy-d {
+  display: none;
+}
+
+.flesy-t {
+  margin-top: 45px;
+  margin-right: 0;
+  order: 1;
+  padding: 0 5% 0;
+}
+
+.flesy-logo {
+  margin-top: 50px;
+}
+
+.floating {
+  padding: 0 1% 0;
+}
+
+.sensorize-wrap {
+  padding-top: 60px;
+  height: 770px;
+}
+
+.sensorize-description {
+  text-align: center;
+  margin: 0 auto 30px;
+  float: none;
+}
+
+.sensorize-mockup {
+  float: none;
+}
+
+.sensorize-logo {
+  padding: 0 8% 0;
+}
+
+.sensorize-text {
+  text-align: center;
+}
+
+footer {
+  padding-top: 28px;
+}
+
+.foot {
+  font-size: 1.25em;
+}
+
+}
+
+
+
+@media screen and (max-width: 480px) and (min-width: 321px) {
+
+
+.logo-header {
+  background-size: 180x 180px;
+  max-height: 90px;
+}
+
+.arrow-top {
+    background-size: 46px 24px;
+    max-height: 12px;
+}
+
+h1 {
+  font-size: 1.25em;
+  letter-spacing: 1px;
+}
+
+.desc {
+  margin: 3px 0 20px;
+  font-size: 1em;
+}
+
+.quote {
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 0 6.5% 0;
+}
+
+.contact-fixed {
+  padding: 0.6em 0.6em;
+  margin-right: 2px;
+}
+
+.contact-top {
+  padding: 0.6em 0.6em;
+  margin-right: 5px;
+}
+
+.icons {
+  margin-top: 25px;
+}
+
+.icon-medium-fixed {
+  margin-top: 8px;
+}
+
+.note {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 1125px;
+}
+
+.note-about-me, .recent-work {
+  font-size: 1.25em;
+}
+
+.note-about-me:before, .recent-work:before {
+  background-size: 22px 22px;
+  padding-left: 35px;
+}
+
+.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+  font-size: 1.05em;
+  line-height: 1.55;
+}
+
+.work-text {
+  padding: 0 5% 0;
+  margin-bottom: 40px;
+}
+
+.left-elem {
+  margin: -700px 0 0 -55%;
+  background-size: 304px 742px;
+  width: 304px;
+  height: 742px;
+  float: left;
+  opacity: 0.23;
+}
+
+.right-elem {
+  margin: -1420px -55% 0 0;
+  background-size: 353px 852px;
+  width: 353px;
+  height: 852px;
+  float: right;
+  opacity: 0.23;
+}
+
+.zep-wrap {
+  padding-top: 60px;
+  height: 650px;
+}
+
+.zep-device {
+  padding: 0 2% 0;
+}
+
+.flesy-container {
+  flex-direction: column;
+}
+
+.flesy-d {
+  display: none;
+}
+
+.flesy-t {
+  margin-top: 45px;
+  margin-right: 0;
+  order: 1;
+  padding: 0 5% 0;
+}
+
+.flesy-logo {
+  margin-top: 50px;
+}
+
+.floating {
+  padding: 0 3% 0;
+}
+
+.sensorize-wrap {
+  padding-top: 60px;
+  height: 820px;
+}
+
+.sensorize-description {
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+.sensorize-logo {
+  padding: 0 8% 0;
+}
+
+.sensorize-text {
+  text-align: center;
+}
+
+.agroeste-container {
+  padding-top: 55px;
+}
+
+footer {
+  height: 50px;
+  padding-top: 20px;
+  font-size: 0.95em;
+}
+
+.foot {
+  display: inline;
+}
+
+.chat {
+  font-size: 2.5em;
+}
+
+p.more {
+  margin: 0 0 30px;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+
+
+}
+
+/***************** 
+
+FIM 
+
+*****************/
+
+
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 568px) {
+
+
+        /***********************************
+
+        iPhone 5
+
+        ************************************/
+
+.logo-header {
+  background-size: 180x 180px;
+  max-height: 90px;
+}
+
+.arrow-top {
+    background-size: 46px 24px;
+    max-height: 12px;
+}
+
+h1 {
+  font-size: 1.25em;
+  letter-spacing: 1px;
+}
+
+.desc {
+  margin: 3px 0 20px;
+  font-size: 1em;
+}
+
+.quote {
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 0 6.5% 0;
+}
+
+.contact-fixed {
+  padding: 0.6em 0.6em;
+  margin-right: 2px;
+}
+
+.contact-top {
+  padding: 0.6em 0.6em;
+  margin-right: 5px;
+}
+
+.icons {
+  margin-top: 25px;
+}
+
+.icon-medium-fixed {
+  margin-top: 8px;
+}
+
+.note {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 1415px;
+}
+
+.note-about-me, .recent-work {
+  font-size: 1.25em;
+}
+
+.note-about-me:before, .recent-work:before {
+  background-size: 22px 22px;
+  padding-left: 35px;
+}
+
+.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+  font-size: 1.05em;
+  line-height: 1.55;
+}
+
+.work-text {
+  padding: 0 5% 0;
+  margin-bottom: 40px;
+}
+
+.left-elem {
+  margin: -700px 0 0 -55%;
+  background-size: 304px 742px;
+  width: 304px;
+  height: 742px;
+  float: left;
+  opacity: 0.23;
+}
+
+.right-elem {
+  margin: -1420px -55% 0 0;
+  background-size: 353px 852px;
+  width: 353px;
+  height: 852px;
+  float: right;
+  opacity: 0.23;
+}
+
+.zep-wrap {
+  padding-top: 60px;
+  height: 650px;
+}
+
+.zep-device {
+  padding: 0 2% 0;
+}
+
+.flesy-container {
+  flex-direction: column;
+}
+
+.flesy-d {
+  display: none;
+}
+
+.flesy-t {
+  margin-top: 45px;
+  margin-right: 0;
+  order: 1;
+  padding: 0 5% 0;
+}
+
+.flesy-logo {
+  margin-top: 50px;
+}
+
+.floating {
+  padding: 0 3% 0;
+}
+
+.sensorize-wrap {
+  padding-top: 60px;
+  height: 770px;
+}
+
+.sensorize-description {
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+.sensorize-logo {
+  padding: 0 8% 0;
+}
+
+.sensorize-text {
+  text-align: center;
+}
+
+.agroeste-container {
+  padding-top: 55px;
+}
+
+footer {
+  padding-top: 20px;
+  font-size: 0.95em;
+}
+
+.foot {
+  display: inline;
+}
+
+.chat {
+  font-size: 2.5em;
+}
+
+p.more {
+  margin: 0 0 30px;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+
+
+}
+
+
+
+/***************** 
+
+FIM 
+
+*****************/
+
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+.note {
+  height: 1285px;
+}
+
+footer {
+  padding-top: 10px;
+}
+
+}
+
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  
+
+        /***********************************
+
+        iPhone 6
+
+        ************************************/
+
+.arrow-top {
+    background-size: 46px 24px;
+    max-height: 12px;
+}
+
+.logo-header {
+  background-size: 274px 274px;
+  max-height: 137px;
+}
+
+h1 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.desc {
+  margin: 0 0 20px;
+  font-size: 1.1em;
+}
+
+.note {
+  height: 1395px;
+}
+
+.note-about-me, .recent-work {
+  font-size: 1.4em;
+}
+
+.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.work-text {
+  padding: 0 12% 0;
+}
+
+.zep-wrap {
+  height: 660px;
+}
+
+.sensorize-wrap {
+  height: 785px;
+}
+
+.agroeste-device {
+  padding-bottom: 35px;
+}
+
+p.more {
+  padding: 0 20% 0;
+}
+
+footer {
+  padding-top: 20px;
+  height: 50px;
+  font-size: 0.95em;
+}
+
+}
+
+/***************** 
+
+FIM 
+
+*****************/
+
+
+
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 3) {
+ 
+        /***********************************
+
+        iPhone 6 Plus Portrait
+
+        ************************************/
+
+.logo-header {
+  background-size: 274px 274px;
+  max-height: 137px;
+}
+
+.arrow-top {
+    background-size: 54px 32px;
+    max-height: 16px;
+}
+
+h1 {
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.desc {
+  margin: 0 0 30px;
+  font-size: 1.25em;
+}
+
+.quote {
+  font-size: 1.15em;
+  padding: 0 12% 0;
+}
+
+.note {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  height: 1725px;
+}
+
+.note-about-me, .recent-work {
+  font-size: 1.5em;
+}
+
+.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+  font-size: 1.3em;
+}
+
+.work-text {
+  padding: 0 10% 0;
+}
+
+.ccb-devices {
+  margin-bottom: 75px;
+}
+
+.zep-wrap {
+  padding-top: 80px;
+  height: 770px;
+}
+
+.flesy-logo {
+  margin-top: 60px;
+}
+
+.sensorize-description {
+  margin-top: 10px;
+}
+
+.sensorize-wrap {
+  height: 860px;
+}
+
+.agroeste-container {
+  padding-top: 60px;
+}
+
+.agroeste-device {
+  padding-bottom: 40px;
+}
+
+.contact-wrap {
+  padding-top: 45px;
+}
+
+.chat {
+  font-size: 2.7em;
+}
+
+p.more {
+  padding: 0 15% 0;
+  font-size: 1.25em;
+}
+
+footer {
+  padding-top: 19px;
+  height: 50px;
+  font-size: 1em;
+}
+
+
+
+}
+
+/***************** 
+
+FIM 
+
+*****************/
+
+
+
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 3) {
+
+        /***********************************
+
+        iPhone 6 Plus Landscape
+
+        ************************************/
+
+
+
+
+}
+
+/***************** 
+
+FIM 
+
+*****************/
+
+
+
