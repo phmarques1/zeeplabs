@@ -1176,15 +1176,23 @@ FIM
 
         ************************************/
 
+.logo-white, .logo-black {
+  background-size: 252px 52px;
+  max-height: 26px;
+}
+
+
 h1 {
-  font-size: 2.5em;
+  font-size: 2.7em;
   padding: 0 3%;
-  line-height: 50px;
+  line-height: 55px;
 }
 
 .subtitle {
+  padding-right: 2%;
+  padding-left: 2%;
   margin-top: 30px;
-  font-size: 1.0em;
+  font-size: 1.1em;
   line-height: 28px;
 }
 
