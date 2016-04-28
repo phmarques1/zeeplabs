@@ -68,36 +68,6 @@ body.down header.clonedHeader {
     transform: translateY(0);
 }
 
-.icons {
-  background-size: 50px 50px;
-  width: 25px;
-  height: 25px;
-  float: left;
-  opacity: 0.8;
-  margin: 20px 5px 0;
-}
-
-.icons:hover {
-  opacity: 1.0;
-}
-
-.icons-fixed {
-  background-size: 50px 50px;
-  width: 25px;
-  height: 25px;
-  float: left;
-  opacity: 0.8;
-  margin: 8px 10px 0 0;
-}
-
-.icon-medium-fixed {
-  margin: 8px 0 0 0;
-}
-
-.icons-fixed:hover {
-  opacity: 1.0;
-}
-
 
 .top-fixed {
   max-width: 100%;
@@ -106,23 +76,7 @@ body.down header.clonedHeader {
   padding: 0 1% 0;
 }
 
-.profile-fixed {
-  background-size: 74px 74px;
-  width: 37px;
-  height: 37px;
-}
-
-.profile-hidden {
-  margin: 12px auto 0;
-  text-align: center;
-  background: url('../img/profile-fixed@2x.png') no-repeat center;
-  background-size: 37px 37px;
-  width: 37px;
-  height: 37px;
-}
-
 .contact-fixed {
-  font-family: 'Open Sans', 'sans serif';
   margin: 12px 10px 0;
   text-align: center;
   padding: 0.6em 1.5em;
@@ -145,7 +99,6 @@ body.down header.clonedHeader {
 }
 
 .contact-top {
-  font-family: 'Open Sans', 'sans serif';
   margin: 17px 10px;
   text-align: center;
   padding: 0.6em 1.5em;
@@ -209,7 +162,7 @@ body.down header.clonedHeader {
 .arrows {
     background-size: 30px 16px;
     max-height: 15px;
-    bottom: 5%;
+    bottom: 3%;
     left:0;
     right:0;
     margin: 0 auto 0;
@@ -275,8 +228,7 @@ body.down header.clonedHeader {
 .logo-white, .logo-black {
   margin: 20px 10px 0;
   background-size: 242px 42px;
-  width: 141px;
-  height: 21px;
+  max-height: 21px;
 }
 
 h1 {
@@ -300,11 +252,11 @@ h1 {
 }
 
 .subtitle {
-  max-width: 500px;
+  max-width: 494px;
   margin: 20px auto 0;
   text-align: center;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.15em;
   font-weight: 300;
   letter-spacing: 1.5px;
   line-height: 28px;
@@ -320,12 +272,10 @@ h1 {
 
 .about {
   width: 100%;
-  height: 1220px;
+  height: 1160px;
   background-color: #fff;
-  border-bottom: 1px solid rgb(220,220,220);
   text-align: center;
-  padding: 60px 8% 0;
-  overflow: hidden;
+  padding: 90px 8% 0;
 }
 
 .intro {
@@ -336,20 +286,37 @@ h1 {
 }
 
 .powered-by {
-  margin: 40px auto 0;
+  margin: 0 auto;
   max-width: 960px;
   text-align: center;
-  font-size: 3em;
-  line-height: 1.7;
+  font-size: 2.2em;
   font-weight: 800;
-  letter-spacing: 20px;
+  letter-spacing: 10px;
   color: #000;
   text-transform: uppercase;
 }
 
+.humans {
+  color: #fff;
+  margin-top: 55px;
+}
+
+.mission-led {
+  margin-top: 90px;
+}
+
+.help {
+  text-transform: none;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+  letter-spacing: 7px;
+  margin-top: 110px;
+}
+
 .about-us {
-  margin: 40px auto 0;
-  max-width: 700px;
+  margin: 35px auto 0;
+  max-width: 760px;
   text-align: center;
   font-size: 1.05em;
   line-height: 1.7;
@@ -372,11 +339,11 @@ h1 {
 
 .core-services {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1100px;
 }
 
 .core-title, 
-.recent-title {
+.work-title {
   margin: 80px auto 0;
   text-align: left;
   font-size: 0.95em;
@@ -385,8 +352,11 @@ h1 {
   color: black;
 }
 
-.recent-title {
-  margin-top: 50px;
+.work-title {
+  margin-top: 60px;
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
 }
 
 .love-to-do,
@@ -403,8 +373,15 @@ h1 {
 
 .services-flexbox {
   display: flex;
-  margin: 55px auto 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   max-height: 960px;
+  margin: 70px 0 0;
+  background-color: white;
+  border: 1px solid #DDE5ED; 
+  padding: 45px 10px 40px;
+  box-shadow: 0 2px 1px rgb(233,233,233);
 }
 
 .prod-strategy, 
@@ -442,50 +419,38 @@ h1 {
 }
 
 .recent {
-
-/*background: rgb(35,43,59); 
-background: -moz-linear-gradient(top,  rgba(35,43,59,1) 0%, rgba(69,83,111,1) 100%); 
-background: -webkit-linear-gradient(top,  rgba(35,43,59,1) 0%,rgba(69,83,111,1) 100%); 
-background: linear-gradient(to bottom,  rgba(35,43,59,1) 0%,rgba(69,83,111,1) 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232b3b', endColorstr='#45536f',GradientType=0 );*/
-
-  
-  background: rgb(28,28,28); 
-  background: -moz-linear-gradient(top,  rgba(28,28,28,1) 0%, rgba(56,56,56,1) 100%); 
-  background: -webkit-linear-gradient(top,  rgba(28,28,28,1) 0%,rgba(56,56,56,1) 100%); 
-  background: linear-gradient(to bottom,  rgba(28,28,28,1) 0%,rgba(56,56,56,1) 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1c1c', endColorstr='#383838',GradientType=0 );
-   
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#343a64+0,5a6ead+66,7798e5+100 */
+  background: rgb(52,58,100); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(52,58,100,1) 0%, rgba(90,110,173,1) 66%, rgba(119,152,229,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(52,58,100,1) 0%,rgba(90,110,173,1) 66%,rgba(119,152,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(52,58,100,1) 0%,rgba(90,110,173,1) 66%,rgba(119,152,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343a64', endColorstr='#7798e5',GradientType=0 ); /* IE6-9 */
   width: 100%;
-  height: 2220px;
+  height: 2890px;
   text-align: center;
   padding: 30px 8% 0;
-  overflow: hidden;
-}
-
-.recent-title {
-  color: rgb(255,204,0);
 }
 
 .recent-work {
-  color: #8A8A8A;
+  color: rgb(200,200,200);
 }
 
 .line-separator-dark {
   height: 1px;
-  background: rgb(140,140,140);
-  border-bottom: 1px solid rgb(140,140,140);
+  background: rgb(190,190,190);
+  border-bottom: 1px solid rgb(190,190,190);
 }
 
 .zep {
   margin-top: 50px;
-  background-size: 1494px 686px;
-  max-height: 343px;
+  padding-left: 8%;
+  background-size: 2218px 1002px;
+  max-height: 501px;
 }
 
-.zep-title, .flesy-title, .agroeste-title, .sensorize-title {
+.zep-title, .flesy-title, .agroeste-title, .linkedin-title {
   max-width: 960px;
-  margin: 50px auto 10px;
+  margin: 60px auto 10px;
   text-align: center;
   color: #fff;
   font-size: 2em;
@@ -493,22 +458,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232b3b', end
   letter-spacing: 3px;
 }
 
-.flesy-container, .agroeste-container {
+.flesy-container {
   display: flex;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
-  margin-top: 70px;
+  margin-top: 120px;
   align-items: center;
 }
 
-.sensorize-container {
-  margin-top: 100px;
+.linkedin-container {
+  margin-top: 170px;
 }
 
-.zep-description, .flesy-description, .agroeste-description, .sensorize-description {
+.zep-description, .flesy-description, .linkedin-description {
   max-width: 600px;
-  margin: 0 auto 45px;
+  margin: 0 auto 35px;
   text-align: center;
   color: #fff;
   font-size: 1em;
@@ -516,30 +481,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232b3b', end
   line-height: 28px;
 }
 
-.flesy-title, .flesy-description, .agroeste-title, .agroeste-description {
+.flesy-title, .flesy-description {
   text-align: left;
 }
 
-.flesy-info, .agroeste-info {
+.flesy-info {
   flex-grow: 1;
 }
 
-.flesy-title, .agroeste-title {
+.flesy-title {
   margin-top: 0;
 }
 
-.flesy-description, .agroeste-description {
-  max-width: 420px;
+.flesy-description {
+  max-width: 340px;
   margin: 0;
 }
 
 .flesy-img {
-  background-size: 916px 1062px;
-  max-height: 531px;
+  background-size: 1208px 1400px;
+  max-height: 700px;
 }
 
-
-.play-btn, .download-flesy, .download-agroeste, .sensorize-btn {
+.play-btn, .download-flesy, .linkedin-btn {
   margin: 17px 10px;
   text-align: center;
   padding: 0.8em 3em;
@@ -554,41 +518,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232b3b', end
   letter-spacing: 1px;
 }
 
-.download-flesy, .download-agroeste {
+.download-flesy {
   margin: 25px auto;
   float: left;
 }
 
-.play-btn:hover, .download-flesy:hover, .download-agroeste:hover, .sensorize-btn:hover {
+.play-btn:hover, .download-flesy:hover, .linkedin-btn:hover {
   background-color: #fff;
   color: #1c1c1c;
 }
 
-.agroeste-info {
-  order: 2;
+.linkedin {
+  margin-top: 45px;
+  background-size: 2880px 1790px;
+  max-height: 895px;
+  box-shadow: 0 3px 50px #202640;
 }
-
-.sensorize-img {
-  background-size: 1604px 1022px;
-  max-height: 511px;
-}
-
-
-.sensorize {
-  margin-top: 65px;
-  background-size: 1618px 1004px;
-  max-height: 502px;
-}
-
-
 
 .mission {
-  height: 490px;
+  height: 510px;
+  text-align: center;
 }
 
 .mission-statement {
   font-family: 'reklame-script';
-  margin: 70px auto 0;
+  margin: 40px auto 0;
   max-width: 840px;
   text-align: center;
   font-size: 3.6em;
@@ -598,67 +552,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232b3b', end
   color: #3cb878;
 }
 
+.talk {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 6em;
+  text-decoration: none;
+}
+
+/* LEFT TO RIGHT */
+.sliding-u-l-r {
+display: inline-block;
+}
+
+.sliding-u-l-r:after {
+content: '';
+display: block;
+height: 8px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-u-l-r:hover:after {
+width: 100%;
+background: white;
+}
+
 .rocket-container {
   max-width: 960px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .rocket-img {
   background-size: 126px 226px;
   max-height: 113px;
-  margin: 50px auto;
+  margin: 50px auto 0;
 }
 
-.contact-wrap {
-  height: 300px;
-  margin: 0 auto;
+.hire-us-container {
+  max-height: 1200px;
+  height: 450px;
+  background-color: #252525;
   text-align: center;
-  padding-top: 53px;
-  background-color: #29c55a;
-  line-height: 5px;
+  padding: 50px 8% 0; 
 }
 
-.chat {
-  font-size: 3em;
-  color: #fff;
-}
-
-.more {
-  margin: 0 0 65px;
-  font-size: 1.4em;
-  font-weight: 300;
-  color: #fff;
-}
-
-.contact-down {
-  font-family: 'Open Sans', 'sans serif';
-  text-align: center;
-  padding: 0.8em 1.6em;
-  background-color: transparent;
-  text-shadow: none;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  line-height: 20px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  opacity: 1.0;
-}
-
-.contact-down:hover {
-  background-color: #22be53;
-}
 
 footer {
-  padding: 0 2%;
-  border-top: 1px #e6e6e6 solid;
-  background-color: #fff;
-  color: #a0a0a0;
+  padding: 5px 2%;
+  background-color: #252525;
+  color: #999999;
   text-align: left;
   letter-spacing: 0.75px;
   font-weight: 500;
-  font-size: 0.85em;
+  font-size: 0.8em;
 }
 
 .footer-wrap {
@@ -668,23 +616,28 @@ footer {
   display: -ms-flex;
   max-width: 960px;
   margin: 0 auto;
+  border-top: 1px #999999 solid;
 }
 
 .email-contact {
   align-self: center;
 }
 
-.footer-right {
+.footer-center {
   flex-grow: 1;
   align-self: center;
   text-align: center;
 }
 
-.mixpanel {
+.love {
   align-self: center;
 }
-.mix-wrap {
+.love-wrap {
   flex-grow: 1;
+}
+
+.contact-bottom {
+  color: #999999;;
 }
 
 .contact-bottom:hover {
@@ -704,23 +657,10 @@ footer {
   color: #ed0f04;
 }
 
-
-/**************************************************************** 
-*****************************************************************
-*****************************************************************
-
-IMAGE AND ICONS @2X DOWNSIZING
-
-*****************************************************************
-*****************************************************************
-****************************************************************/
-
-
-
-.green-line {
-  background-size: 550px 16px;
-  width: 225px;
-  height: 8px;
+.line {
+  background-size: 800px 30px;
+  width: 400px;
+  height: 15px;
 }
 
 
@@ -741,351 +681,239 @@ MEDIA QUERIES
 *****************************************************************
 ****************************************************************/
 
-@media screen and (max-width: 1153px) and (min-width: 769px) {
+@media screen and (max-width: 1153px) and (min-width: 481px) {
 
-.top {
-  display: block;
+h1 {
+  font-size: 3.2em;
+  padding: 0 3%;
+  line-height: 70px;
 }
 
-.note {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  height: 1060px;
-}
-
-.left-elem {
-  opacity: 0.23;
-}
-
-.right-elem {
-  opacity: 0.23;
-}
-
-.zep-wrap {
-  padding-top: 50px;
-  height: 710px;
+.subtitle {
+  margin-top: 30px;
+  font-size: 1.05em;
+  line-height: 32px;
 }
 
 .flesy-container {
   flex-direction: column;
 }
 
-.flesy-text {
-  max-width: 700px;
-}
-
-.flesy-d {
-  display: none;
-}
-
-.flesy-t {
-  margin-top: 45px;
-  margin-right: 0;
-  order: 1;
-  padding: 0 5% 0;
-}
-
-.flesy-logo {
-  margin-top: 50px;
-}
-
-.floating {
-  padding: 0 1% 0;
-}
-
-.sensorize-wrap {
-  padding-top: 60px;
-  height: 770px;
-}
-
-.sensorize-description {
-  text-align: center;
-  margin: 0 auto 30px;
-  float: none;
-}
-
-.sensorize-mockup {
-  float: none;
-}
-
-.sensorize-logo {
-  padding: 0 8% 0;
-}
-
-.sensorize-text {
+.flesy-title, .flesy-description {
   text-align: center;
 }
 
-footer {
-  padding-top: 28px;
+.flesy-description {
+  margin-bottom: 45px;
+  max-width: 500px;
 }
 
-.foot {
-  font-size: 1.25em;
+.download-flesy {
+  float: none;
 }
 
-
-}
-
-@media screen and (max-width: 768px) and (min-width: 481px) {
-
-.top {
-  display: block;
-}
-
-.note {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  height: 1060px;
-}
-
-.desc {
-  font-size: 1.8em;
-    margin-bottom: 50px;
-}
-
-.quote {
-  padding: 0 10% 0;
-  font-size: 1.4em;
-}
-
-.left-elem {
-  opacity: 0.23;
-}
-
-.right-elem {
-  opacity: 0.23;
-}
-
-.zep-wrap {
-  padding-top: 50px;
-  height: 710px;
+.flesy-img {
+  margin-top: 65px;
 }
 
 .flesy-container {
+  margin-top: 40px;
+}
+
+.linkedin-container {
+  margin-top: 100px;
+}
+
+.about {
+ height: 1610px;  
+}
+
+.recent {
+  height: 2500px;
+}
+
+.mission-statement {
+  font-size: 2.5em;
+  padding: 3%;
+}
+
+.talk {
+  margin-top: 10px;
+  font-size: 5em;
+  padding: 0;
+}
+
+
+.services-description {
+  max-width: 400px;
+}
+
+.services-flexbox {
+  flex-direction: column;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.prod-strategy, 
+.ui-ux-design, 
+.development {
+  margin: 30px;
+}
+
+.about-us {
+  font-size: 0.95em;
+}
+
+.powered-by {
+  font-size: 1.5em;
+}
+
+.help {
+  font-size: 1.2em;
+}
+
+.footer-wrap {
   flex-direction: column;
 }
 
-.flesy-text {
-  max-width: 700px;
-}
-
-.flesy-d {
-  display: none;
-}
-
-.flesy-t {
-  margin-top: 45px;
-  margin-right: 0;
+.footer-center {
   order: 1;
-  padding: 0 5% 0;
+  margin: 12px 0;
 }
 
-.flesy-logo {
-  margin-top: 50px;
+.email-contact {
+  order: 2;
+  margin-bottom: 15px;
 }
 
-.floating {
-  padding: 0 1% 0;
+.love {
+  order: 3;
+  margin-bottom: 5px;
 }
 
-.sensorize-wrap {
-  padding-top: 60px;
-  height: 770px;
+.footer-wrap {
+  border-top: 0;
 }
 
-.sensorize-description {
-  text-align: center;
-  margin: 0 auto 30px;
-  float: none;
-}
-
-.sensorize-mockup {
-  float: none;
-}
-
-.sensorize-logo {
-  padding: 0 8% 0;
-}
-
-.sensorize-text {
-  text-align: center;
-}
-
-footer {
-  padding-top: 28px;
-}
-
-.foot {
-  font-size: 1.25em;
-}
 
 }
+
 
 
 
 @media screen and (max-width: 480px) and (min-width: 321px) {
 
-
-.logo-header {
-  background-size: 180x 180px;
-  max-height: 90px;
-}
-
-.arrow-top {
-    background-size: 46px 24px;
-    max-height: 12px;
-}
-
 h1 {
-  font-size: 1.25em;
-  letter-spacing: 1px;
+  font-size: 2.2em;
+  padding: 0 3%;
+  line-height: 50px;
 }
 
-.desc {
-  margin: 3px 0 20px;
-  font-size: 1em;
-}
-
-.quote {
-  font-size: 1em;
-  line-height: 1.6;
-  padding: 0 6.5% 0;
-}
-
-.contact-fixed {
-  padding: 0.6em 0.6em;
-  margin-right: 2px;
-}
-
-.contact-top {
-  padding: 0.6em 0.6em;
-  margin-right: 5px;
-}
-
-.icons {
-  margin-top: 25px;
-}
-
-.icon-medium-fixed {
-  margin-top: 8px;
-}
-
-.note {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  height: 1125px;
-}
-
-.note-about-me, .recent-work {
-  font-size: 1.25em;
-}
-
-.note-about-me:before, .recent-work:before {
-  background-size: 22px 22px;
-  padding-left: 35px;
-}
-
-.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+.subtitle {
+  margin-top: 30px;
   font-size: 1.05em;
-  line-height: 1.55;
-}
-
-.work-text {
-  padding: 0 5% 0;
-  margin-bottom: 40px;
-}
-
-.left-elem {
-  margin: -700px 0 0 -55%;
-  background-size: 304px 742px;
-  width: 304px;
-  height: 742px;
-  float: left;
-  opacity: 0.23;
-}
-
-.right-elem {
-  margin: -1420px -55% 0 0;
-  background-size: 353px 852px;
-  width: 353px;
-  height: 852px;
-  float: right;
-  opacity: 0.23;
-}
-
-.zep-wrap {
-  padding-top: 60px;
-  height: 650px;
-}
-
-.zep-device {
-  padding: 0 2% 0;
+  line-height: 32px;
 }
 
 .flesy-container {
   flex-direction: column;
 }
 
-.flesy-d {
-  display: none;
-}
-
-.flesy-t {
-  margin-top: 45px;
-  margin-right: 0;
-  order: 1;
-  padding: 0 5% 0;
-}
-
-.flesy-logo {
-  margin-top: 50px;
-}
-
-.floating {
-  padding: 0 3% 0;
-}
-
-.sensorize-wrap {
-  padding-top: 60px;
-  height: 820px;
-}
-
-.sensorize-description {
-  text-align: center;
-  margin: 0 0 35px;
-}
-
-.sensorize-logo {
-  padding: 0 8% 0;
-}
-
-.sensorize-text {
+.flesy-title, .flesy-description {
   text-align: center;
 }
 
-.agroeste-container {
-  padding-top: 55px;
+.flesy-description {
+  margin-bottom: 45px;
+  max-width: 500px;
 }
 
-footer {
-  height: 50px;
-  padding-top: 20px;
+.download-flesy {
+  float: none;
+}
+
+.flesy-img {
+  margin-top: 65px;
+}
+
+.flesy-container {
+  margin-top: 40px;
+}
+
+.linkedin-container {
+  margin-top: 100px;
+}
+
+.about {
+ height: 1680px;  
+}
+
+.recent {
+  height: 2130px;
+}
+
+.mission-statement {
+  font-size: 1.8em;
+  padding: 3%;
+}
+
+.talk {
+  margin-top: 10px;
+  font-size: 3.5em;
+  padding: 0;
+}
+
+.services-description {
+  max-width: 400px;
+}
+
+.services-flexbox {
+  flex-direction: column;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.prod-strategy, 
+.ui-ux-design, 
+.development {
+  margin: 30px;
+}
+
+.about-us {
   font-size: 0.95em;
 }
 
-.foot {
-  display: inline;
+.powered-by {
+  font-size: 1.5em;
 }
 
-.chat {
-  font-size: 2.5em;
+.help {
+  font-size: 0.95em;
+  margin-top: 125px;
 }
 
-p.more {
-  margin: 0 0 30px;
-  font-size: 1.1em;
-  line-height: 1.2;
+.footer-wrap {
+  flex-direction: column;
+}
+
+.footer-center {
+  order: 1;
+  margin: 12px 0;
+}
+
+.email-contact {
+  order: 2;
+  margin-bottom: 15px;
+}
+
+.love {
+  order: 3;
+  margin-bottom: 5px;
+}
+
+.mission {
+  height: 495px;
+  text-align: center;
 }
 
 
@@ -1110,170 +938,136 @@ FIM
 
         ************************************/
 
-.logo-header {
-  background-size: 180x 180px;
-  max-height: 90px;
+.contact-top, .contact-fixed {
+  display: none;
 }
 
-.arrow-top {
-    background-size: 46px 24px;
-    max-height: 12px;
+.top, .top-fixed {
+  text-align: center;
+}
+
+.logo-white {
+  margin: 50px auto;
+}
+
+.logo-black {
+  margin: 20px auto;
 }
 
 h1 {
-  font-size: 1.25em;
-  letter-spacing: 1px;
+  font-size: 2.2em;
+  padding: 0 3%;
+  line-height: 50px;
 }
 
-.desc {
-  margin: 3px 0 20px;
-  font-size: 1em;
-}
-
-.quote {
-  font-size: 1em;
-  line-height: 1.6;
-  padding: 0 6.5% 0;
-}
-
-.contact-fixed {
-  padding: 0.6em 0.6em;
-  margin-right: 2px;
-}
-
-.contact-top {
-  padding: 0.6em 0.6em;
-  margin-right: 5px;
-}
-
-.icons {
-  margin-top: 25px;
-}
-
-.icon-medium-fixed {
-  margin-top: 8px;
-}
-
-.note {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  height: 1415px;
-}
-
-.note-about-me, .recent-work {
-  font-size: 1.25em;
-}
-
-.note-about-me:before, .recent-work:before {
-  background-size: 22px 22px;
-  padding-left: 35px;
-}
-
-.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+.subtitle {
+  margin-top: 30px;
   font-size: 1.05em;
-  line-height: 1.55;
-}
-
-.work-text {
-  padding: 0 5% 0;
-  margin-bottom: 40px;
-}
-
-.left-elem {
-  margin: -700px 0 0 -55%;
-  background-size: 304px 742px;
-  width: 304px;
-  height: 742px;
-  float: left;
-  opacity: 0.23;
-}
-
-.right-elem {
-  margin: -1420px -55% 0 0;
-  background-size: 353px 852px;
-  width: 353px;
-  height: 852px;
-  float: right;
-  opacity: 0.23;
-}
-
-.zep-wrap {
-  padding-top: 60px;
-  height: 650px;
-}
-
-.zep-device {
-  padding: 0 2% 0;
+  line-height: 32px;
 }
 
 .flesy-container {
   flex-direction: column;
 }
 
-.flesy-d {
-  display: none;
-}
-
-.flesy-t {
-  margin-top: 45px;
-  margin-right: 0;
-  order: 1;
-  padding: 0 5% 0;
-}
-
-.flesy-logo {
-  margin-top: 50px;
-}
-
-.floating {
-  padding: 0 3% 0;
-}
-
-.sensorize-wrap {
-  padding-top: 60px;
-  height: 770px;
-}
-
-.sensorize-description {
-  text-align: center;
-  margin: 0 0 35px;
-}
-
-.sensorize-logo {
-  padding: 0 8% 0;
-}
-
-.sensorize-text {
+.flesy-title, .flesy-description {
   text-align: center;
 }
 
-.agroeste-container {
-  padding-top: 55px;
+.flesy-description {
+  margin-bottom: 45px;
+  max-width: 500px;
 }
 
-footer {
-  padding-top: 20px;
+.download-flesy {
+  float: none;
+}
+
+.flesy-img {
+  margin-top: 65px;
+}
+
+.flesy-container {
+  margin-top: 40px;
+}
+
+.linkedin-container {
+  margin-top: 100px;
+}
+
+.about {
+ height: 1680px;  
+}
+
+.recent {
+  height: 2130px;
+}
+
+.mission-statement {
+  font-size: 1.8em;
+  padding: 3%;
+}
+
+.talk {
+  margin-top: 10px;
+  font-size: 3.5em;
+  padding: 0;
+}
+
+.services-description {
+  max-width: 400px;
+}
+
+.services-flexbox {
+  flex-direction: column;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.prod-strategy, 
+.ui-ux-design, 
+.development {
+  margin: 30px;
+}
+
+.about-us {
   font-size: 0.95em;
 }
 
-.foot {
-  display: inline;
+.powered-by {
+  font-size: 1.5em;
 }
 
-.chat {
-  font-size: 2.5em;
+.help {
+  font-size: 0.95em;
+  margin-top: 125px;
 }
 
-p.more {
-  margin: 0 0 30px;
-  font-size: 1.1em;
-  line-height: 1.2;
+.footer-wrap {
+  flex-direction: column;
 }
 
-
-
+.footer-center {
+  order: 1;
+  margin: 12px 0;
 }
 
+.email-contact {
+  order: 2;
+  margin-bottom: 15px;
+}
+
+.love {
+  order: 3;
+  margin-bottom: 5px;
+}
+
+.mission {
+  height: 495px;
+  text-align: center;
+}
+
+}
 
 
 /***************** 
@@ -1382,96 +1176,16 @@ FIM
 
         ************************************/
 
-.logo-header {
-  background-size: 274px 274px;
-  max-height: 137px;
-}
-
-.arrow-top {
-    background-size: 54px 32px;
-    max-height: 16px;
-}
-
 h1 {
-  font-size: 1.7em;
-  letter-spacing: 1px;
-  margin-bottom: 7px;
+  font-size: 2.5em;
+  padding: 0 3%;
+  line-height: 50px;
 }
 
-.desc {
-  margin: 0 0 30px;
-  font-size: 1.25em;
-}
-
-.quote {
-  font-size: 1.15em;
-  padding: 0 12% 0;
-}
-
-.note {
-  padding-top: 45px;
-  padding-bottom: 45px;
-  height: 1725px;
-}
-
-.note-about-me, .recent-work {
-  font-size: 1.5em;
-}
-
-.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
-  font-size: 1.3em;
-}
-
-.work-text {
-  padding: 0 10% 0;
-}
-
-.ccb-devices {
-  margin-bottom: 75px;
-}
-
-.zep-wrap {
-  padding-top: 80px;
-  height: 770px;
-}
-
-.flesy-logo {
-  margin-top: 60px;
-}
-
-.sensorize-description {
-  margin-top: 10px;
-}
-
-.sensorize-wrap {
-  height: 860px;
-}
-
-.agroeste-container {
-  padding-top: 60px;
-}
-
-.agroeste-device {
-  padding-bottom: 40px;
-}
-
-.contact-wrap {
-  padding-top: 45px;
-}
-
-.chat {
-  font-size: 2.7em;
-}
-
-p.more {
-  padding: 0 15% 0;
-  font-size: 1.25em;
-}
-
-footer {
-  padding-top: 19px;
-  height: 50px;
-  font-size: 1em;
+.subtitle {
+  margin-top: 30px;
+  font-size: 1.0em;
+  line-height: 28px;
 }
 
 
