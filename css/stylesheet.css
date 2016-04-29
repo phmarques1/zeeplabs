@@ -1060,10 +1060,6 @@ MEDIA QUERIES
   margin-bottom: 5px;
 }
 
-.footer-wrap {
-  border-top: 0;
-}
-
 .line {
   height: 12px;
 }
@@ -1475,12 +1471,9 @@ FIM
 *****************/
 
 @media screen and (min-device-width: 360px) and (max-device-width: 640px) {
-.note {
-  height: 1285px;
-}
 
-footer {
-  padding-top: 10px;
+.recent {
+  height: 1840px;
 }
 
 }
