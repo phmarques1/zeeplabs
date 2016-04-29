@@ -16,8 +16,57 @@ html, body {
 
 
 
+.arrows {
+    bottom: 2%;
+    left:0;
+    right:0;
+    margin: 0 auto 0;
+    position: absolute;
+    text-align: center;
+}
 
-/**
+@-webkit-keyframes chevron-pulse {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes chevron-pulse {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.tcon-svgchevron {
+  height: 32px;
+  width: 32px; }
+
+.tcon-svgchevron path {
+  -webkit-animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+  stroke: white;
+  stroke-width: 1px; }
+
+.tcon-svgchevron path.a1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.tcon-svgchevron path.a2 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s; }
+
+.tcon-svgchevron path.a3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s; }
 
 
 
@@ -25,7 +74,19 @@ html, body {
 
 
 
-**/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -159,16 +220,7 @@ body.down header.clonedHeader {
   text-align:center;
 }
 
-.arrows {
-    bottom: 1%;
-    left:0;
-    right:0;
-    margin: 0 auto 0;
-    position: absolute;
-    text-align: center;
-}
-
-.bounce {
+/*.bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
@@ -221,7 +273,7 @@ body.down header.clonedHeader {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
-}
+}*/
 
 .logo-white, .logo-black {
   margin: 20px 10px 0;
