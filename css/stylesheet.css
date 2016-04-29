@@ -231,14 +231,14 @@ body.down header.clonedHeader {
   max-height: 21px;
 }
 
-h1 {
+.cd-headline {
   font-family: 'adelle-sans', 'sans serif';
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  font-size: 5.5em;
-  font-weight: 800;
+  font-size: 3.8em;
+  font-weight: 700;
   letter-spacing: 3px;
   line-height: 105px;
 }
@@ -253,13 +253,13 @@ h1 {
 
 .subtitle {
   max-width: 494px;
-  margin: 20px auto 0;
+  margin: 15px auto 0;
   text-align: center;
   color: #fff;
   font-size: 1.15em;
   font-weight: 300;
   letter-spacing: 1.5px;
-  line-height: 28px;
+  line-height: 30px;
 }
 
 .quote {
@@ -281,7 +281,7 @@ background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(246,246,246,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
 
   text-align: center;
-  padding: 87px 8% 0;
+  padding: 87px 5% 0;
 }
 
 .intro {
@@ -420,7 +420,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
-  max-height: 960px;
   margin: 30px 0 0;
   background-color: white;
   border: 1px solid #e6e6e6; 
@@ -462,7 +461,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
 .services-description {
   max-width: 250px;
   margin: 0 auto;
-  font-size: 0.9em;
+  font-size: 0.95em;
   line-height: 1.7;
   font-weight: 300;
   color: rgb(120,120,120); 
@@ -478,7 +477,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
   width: 100%;
   height: 2890px;
   text-align: center;
-  padding: 30px 8% 0;
+  padding: 30px 5% 0;
 }
 
 .recent-work {
@@ -498,7 +497,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
   max-height: 501px;
 }
 
-.zep-title, .flesy-title, .agroeste-title, .linkedin-title {
+.zep-title, .flesy-title, .linkedin-title {
   max-width: 960px;
   margin: 60px auto 10px;
   text-align: center;
@@ -579,7 +578,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
 
 .play-btn:hover, .download-flesy:hover, .linkedin-btn:hover {
   background-color: #fff;
-  color: #1c1c1c;
+  color: #373F6B;
 }
 
 .linkedin {
@@ -594,6 +593,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
 }
 
 .mission {
+  width: 100%;
   height: 685px;
   text-align: center;
   overflow: hidden;
@@ -619,7 +619,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
 }
 
 .rocket-container {
-  max-width: 960px;
   margin: 0 auto;
   text-align: center;
 }
@@ -682,15 +681,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
     transition: width 0s ease;
 }
 
-
 .hire-us-container {
-  max-height: 1200px;
   height: 450px;
   background-color: #252525;
   text-align: center;
   padding: 50px 8% 0; 
 }
-
 
 footer {
   padding: 5px 2%;
@@ -707,7 +703,7 @@ footer {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   border-top: 1px #999999 solid;
 }
@@ -774,18 +770,18 @@ MEDIA QUERIES
 *****************************************************************
 ****************************************************************/
 
-@media screen and (max-width: 1153px) and (min-width: 481px) {
+@media screen and (max-width: 1153px) and (min-width: 769px) {
 
-h1 {
-  font-size: 3.2em;
+.cd-headline {
+  font-size: 2.7em;
   padding: 0 3%;
   line-height: 70px;
 }
 
 .subtitle {
-  margin-top: 30px;
-  font-size: 1.05em;
-  line-height: 32px;
+  margin-top: 10px;
+  font-size: 1.1em;
+  line-height: 28px;
 }
 
 .flesy-container {
@@ -799,6 +795,11 @@ h1 {
 .flesy-description {
   margin-bottom: 45px;
   max-width: 500px;
+}
+
+.flesy-img {
+  background-size: 1090px 1262px;
+  max-height: 631px;
 }
 
 .download-flesy {
@@ -818,33 +819,20 @@ h1 {
 }
 
 .about {
- height: 1610px;  
+ height: 1650px;  
 }
 
 .recent {
-  height: 2500px;
+  height: 2700px;
 }
-
-.mission-statement {
-  font-size: 2.5em;
-  padding: 3%;
-}
-
-.talk {
-  margin-top: 10px;
-  font-size: 5em;
-  padding: 0;
-}
-
 
 .services-description {
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .services-flexbox {
   flex-direction: column;
-  margin-right: 5%;
-  margin-left: 5%;
+
 }
 
 .prod-strategy, 
@@ -857,8 +845,196 @@ h1 {
   font-size: 0.95em;
 }
 
+.prod-strategy, 
+.ui-ux-design {
+  border-right: none;  
+}
+
 .powered-by {
   font-size: 1.5em;
+}
+
+.mission {
+  height: 750px;
+  padding: 0 5% 0;
+}
+
+.mission-statement {
+  margin: 60px auto 0;
+  max-width: 840px;
+  font-size: 3.6em;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  padding: 3%;
+}
+
+.talk {
+  margin-top: 10px;
+  font-size: 5em;
+  padding: 0;
+}
+
+.rocket-img {
+  margin: 60px auto 0;
+}
+
+.icons-bottom {
+  margin-top: -100px;
+}
+
+.help {
+  font-size: 1.2em;
+}
+
+.footer-wrap {
+  flex-direction: column;
+}
+
+.footer-center {
+  order: 1;
+  margin: 12px 0;
+}
+
+.email-contact {
+  order: 2;
+  margin-bottom: 15px;
+}
+
+.love {
+  order: 3;
+  margin-bottom: 5px;
+}
+
+.line {
+  height: 12px;
+}
+
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+.cd-headline {
+  font-size: 1.9em;
+  padding: 0 1%;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.1em;
+  line-height: 28px;
+}
+
+.flesy-container {
+  flex-direction: column;
+}
+
+.flesy-title, .flesy-description {
+  text-align: center;
+}
+
+.flesy-description {
+  margin-bottom: 45px;
+  max-width: 500px;
+}
+
+.flesy-img {
+  background-size: 1090px 1262px;
+  max-height: 631px;
+}
+
+.download-flesy {
+  float: none;
+}
+
+.flesy-img {
+  margin-top: 65px;
+}
+
+.flesy-container {
+  margin-top: 40px;
+}
+
+.linkedin-container {
+  margin-top: 100px;
+}
+
+.about {
+ height: 1650px;  
+}
+
+.recent {
+  height: 2475px;
+  padding-top: 10px;
+}
+
+.zep-title {
+  margin-top: 70px;
+}
+
+.icons-bottom {
+  display: none;
+}
+
+.services-description {
+  max-width: 600px;
+}
+
+.services-flexbox {
+  flex-direction: column;
+}
+
+.prod-strategy, 
+.ui-ux-design, 
+.development {
+  margin: 30px;
+}
+
+.about-us {
+  font-size: 0.95em;
+}
+
+.prod-strategy, 
+.ui-ux-design {
+  border-right: none;  
+}
+
+.powered-by {
+  font-size: 1.5em;
+}
+
+.mission-led {
+  margin-top: 105px;
+}
+
+.mission {
+  height: 650px;
+  padding: 0 5% 0;
+}
+
+.mission-statement {
+  margin: 50px auto 0;
+  max-width: 840px;
+  font-size: 2.7em;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  padding: 3%;
+}
+
+.talk {
+  margin-top: 0;
+  font-size: 5.5em;
+  padding: 0;
+}
+
+.rocket-img {
+  margin: 60px auto 0;
+}
+
+.icons-bottom {
+  margin-top: -100px;
 }
 
 .help {
@@ -888,24 +1064,27 @@ h1 {
   border-top: 0;
 }
 
-
+.line {
+  height: 12px;
 }
 
 
+}
 
 
 @media screen and (max-width: 480px) and (min-width: 321px) {
 
-h1 {
-  font-size: 2.2em;
-  padding: 0 3%;
-  line-height: 50px;
+.cd-headline {
+  font-size: 1.2em;
+  padding: 0 1%;
+  line-height: 70px;
+  letter-spacing: 1px;
 }
 
 .subtitle {
-  margin-top: 30px;
-  font-size: 1.05em;
-  line-height: 32px;
+  margin-top: 5px;
+  font-size: 0.95em;
+  line-height: 25px;
 }
 
 .flesy-container {
@@ -919,6 +1098,16 @@ h1 {
 .flesy-description {
   margin-bottom: 45px;
   max-width: 500px;
+}
+
+/*.flesy-img {
+  background-size: 806px 934px;
+  max-height: 467px;
+}*/
+
+.flesy-img {
+  background-size: 648px 750px;
+  max-height: 375px;
 }
 
 .download-flesy {
@@ -938,32 +1127,37 @@ h1 {
 }
 
 .about {
- height: 1680px;  
+ height: 1765px;  
 }
 
 .recent {
-  height: 2130px;
+  height: 2015px;
+  padding-top: 10px;
 }
 
-.mission-statement {
-  font-size: 1.8em;
-  padding: 3%;
+.zep-title, .flesy-title, .linkedin-title {
+  margin-top: 40px;
+  font-size: 1.6em;
 }
 
-.talk {
-  margin-top: 10px;
-  font-size: 3.5em;
-  padding: 0;
+.zep-title {
+  margin-top: 80px;
+}
+
+.linkedin-title {
+  margin-top: 120px;
+}
+
+.icons-bottom {
+  display: none;
 }
 
 .services-description {
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .services-flexbox {
   flex-direction: column;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 
 .prod-strategy, 
@@ -976,13 +1170,49 @@ h1 {
   font-size: 0.95em;
 }
 
+.prod-strategy, 
+.ui-ux-design {
+  border-right: none;  
+}
+
 .powered-by {
   font-size: 1.5em;
 }
 
+.mission-led {
+  margin-top: 105px;
+}
+
+.mission {
+  height: 650px;
+  padding: 0 5% 0;
+}
+
+.mission-statement {
+  margin: 50px auto 0;
+  max-width: 840px;
+  font-size: 2.1em;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  padding: 3%;
+}
+
+.talk {
+  margin-top: 0;
+  font-size: 5.5em;
+  padding: 0;
+}
+
+.rocket-img {
+  margin: 60px auto 0;
+}
+
+.icons-bottom {
+  margin-top: -100px;
+}
+
 .help {
-  font-size: 0.95em;
-  margin-top: 125px;
+  font-size: 1.2em;
 }
 
 .footer-wrap {
@@ -1004,9 +1234,8 @@ h1 {
   margin-bottom: 5px;
 }
 
-.mission {
-  height: 495px;
-  text-align: center;
+.line {
+  height: 12px;
 }
 
 
@@ -1047,16 +1276,17 @@ FIM
   margin: 20px auto;
 }
 
-h1 {
-  font-size: 2.2em;
-  padding: 0 3%;
-  line-height: 50px;
+.cd-headline {
+  font-size: 1.35em;
+  padding: 0 1%;
+  line-height: 60px;
+  letter-spacing: 1px;
 }
 
 .subtitle {
-  margin-top: 30px;
-  font-size: 1.05em;
-  line-height: 32px;
+  margin-top: 5px;
+  font-size: 0.95em;
+  line-height: 25px;
 }
 
 .flesy-container {
@@ -1072,12 +1302,22 @@ h1 {
   max-width: 500px;
 }
 
+/*.flesy-img {
+  background-size: 806px 934px;
+  max-height: 467px;
+}*/
+
+.flesy-img {
+  background-size: 478px 554px;
+  max-height: 277px;
+}
+
 .download-flesy {
   float: none;
 }
 
 .flesy-img {
-  margin-top: 65px;
+  margin-top: 55px;
 }
 
 .flesy-container {
@@ -1089,38 +1329,63 @@ h1 {
 }
 
 .about {
- height: 1680px;  
+ padding-top: 60px;
+ height: 1660px;  
+}
+
+.bar {
+  margin-top: 75px;
+}
+
+.bar2 {
+  margin-top: 60px;
+}
+
+.bar3 {
+  margin-top: 60px;
+}
+
+.bar-title {
+  padding: 11px 12px;
 }
 
 .recent {
-  height: 2130px;
+  height: 1800px;
+  padding-top: 10px;
 }
 
-.mission-statement {
-  font-size: 1.8em;
-  padding: 3%;
+.zep-title, .flesy-title, .linkedin-title {
+  margin-top: 40px;
+  font-size: 1.5em;
 }
 
-.talk {
-  margin-top: 10px;
-  font-size: 3.5em;
-  padding: 0;
+.zep-title {
+  margin-top: 60px;
 }
 
-.services-description {
-  max-width: 400px;
+.linkedin-title {
+  margin-top: 100px;
+}
+
+.icons-bottom {
+  display: none;
 }
 
 .services-flexbox {
   flex-direction: column;
-  margin-right: 5%;
-  margin-left: 5%;
+  height: 900px;
+  padding: 35px 0 0;
 }
 
 .prod-strategy, 
 .ui-ux-design, 
 .development {
-  margin: 30px;
+  margin: 15px;
+  border-right: 0;
+}
+
+.services-description {
+  margin-left: 2.5px;
 }
 
 .about-us {
@@ -1128,12 +1393,50 @@ h1 {
 }
 
 .powered-by {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+}
+
+.mission-led {
+  margin-top: 105px;
+}
+
+.mission {
+  height: 650px;
+  padding: 0 5% 0;
+}
+
+.mission-statement {
+  margin: 50px auto 0;
+  max-width: 840px;
+  font-size: 1.90em;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  padding: 3%;
+}
+
+
+.hire-us-container {
+  height: 300px;
+}
+
+.talk {
+  margin-top: 0;
+  font-size: 3.5em;
+  padding: 0;
+}
+
+.rocket-img {
+  margin: 60px auto 0;
+}
+
+.icons-bottom {
+  margin-top: -100px;
 }
 
 .help {
-  font-size: 0.95em;
-  margin-top: 125px;
+  margin-top: 50px;
+  font-size: 1em;
 }
 
 .footer-wrap {
@@ -1142,23 +1445,25 @@ h1 {
 
 .footer-center {
   order: 1;
-  margin: 12px 0;
+  margin: 5px 0;
 }
 
 .email-contact {
   order: 2;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .love {
   order: 3;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
-.mission {
-  height: 495px;
-  text-align: center;
+.line {
+  background-size: 600px 30px;
+  width: 200px;
+  height: 12px;
 }
+
 
 }
 
@@ -1190,64 +1495,47 @@ footer {
 
         ************************************/
 
-.arrow-top {
-    background-size: 46px 24px;
-    max-height: 12px;
+.logo-black {
+  margin: 22px auto;
 }
 
-.logo-header {
-  background-size: 274px 274px;
-  max-height: 137px;
-}
-
-h1 {
-  font-size: 1.5em;
+.cd-headline {
+  font-size: 1.6em;
+  padding: 0 1%;
+  line-height: 60px;
   letter-spacing: 1px;
-  margin-bottom: 7px;
 }
 
-.desc {
-  margin: 0 0 20px;
-  font-size: 1.1em;
+.subtitle {
+  margin-top: 5px;
+  font-size: 1em;
+  line-height: 25px;
 }
 
-.note {
-  height: 1395px;
+.services-flexbox {
+  flex-direction: column;
+  height: 840px;
+  padding: 35px 1.5% 0;
 }
 
-.note-about-me, .recent-work {
-  font-size: 1.4em;
+.about {
+ padding-top: 60px;
+ height: 1615px;  
 }
 
-.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
-  font-size: 1.1em;
-  line-height: 1.6;
+
+.bar2 {
+  margin-top: 55px;
 }
 
-.work-text {
-  padding: 0 12% 0;
+
+.recent {
+  height: 1850px;
+  padding-top: 10px;
 }
 
-.zep-wrap {
-  height: 660px;
-}
-
-.sensorize-wrap {
-  height: 785px;
-}
-
-.agroeste-device {
-  padding-bottom: 35px;
-}
-
-p.more {
-  padding: 0 20% 0;
-}
-
-footer {
-  padding-top: 20px;
-  height: 50px;
-  font-size: 0.95em;
+.mission {
+  height: 580px;
 }
 
 }
@@ -1275,21 +1563,59 @@ FIM
 }
 
 
-h1 {
-  font-size: 2.7em;
-  padding: 0 3%;
-  line-height: 55px;
+.logo-black {
+  margin: 20px auto;
+}
+
+.cd-headline {
+  font-size: 1.75em;
+  padding: 0 1%;
+  line-height: 60px;
+  letter-spacing: 1px;
 }
 
 .subtitle {
-  padding-right: 2%;
-  padding-left: 2%;
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 1.1em;
   line-height: 28px;
 }
 
+.services-flexbox {
+  flex-direction: column;
+  height: 840px;
+  padding: 35px 1.5% 0;
+}
 
+.about {
+ padding-top: 60px;
+ height: 1677px;  
+}
+
+.powered-by {
+  font-size: 1.6em;
+}
+
+.about-us {
+  font-size: 1.1em;
+}
+
+.services-description {
+  font-size: 1em;
+}
+
+.zep-description, .flesy-description, .linkedin.description {
+  font-size: 1.1em;
+} 
+
+.recent {
+  height: 1880px;
+  padding-top: 10px;
+}
+
+.help {
+  margin-top: 60px;
+  font-size: 1em;
+}
 
 }
 
