@@ -667,20 +667,20 @@ footer {
 }
 
 .email-contact {
-  align-self: center;
+  -webkit-align-self: center;
 }
 
 .footer-center {
-  flex-grow: 1;
-  align-self: center;
+  -webkit-flex-grow: 1;
+  -webkit-align-self: center;
   text-align: center;
 }
 
 .love {
-  align-self: center;
+  -webkit-align-self: center;
 }
 .love-wrap {
-  flex-grow: 1;
+  -webkit-flex-grow: 1;
 }
 
 .contact-bottom {
