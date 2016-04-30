@@ -1239,8 +1239,8 @@ FIM
 
 .subtitle {
   margin-top: -2px;
-  font-size: 0.99em;
-  line-height: 24px;
+  font-size: 1.05em;
+  line-height: 27px;
 }
 
 .flesy-container {
@@ -1279,7 +1279,7 @@ FIM
 
 .about {
  padding-top: 60px;
- height: 1745px;  
+ height: 1810px;  
 }
 
 .bar {
@@ -1299,7 +1299,7 @@ FIM
 }
 
 .recent {
-  height: 1800px;
+  height: 1815px;
   padding-top: 10px;
 }
 
@@ -1318,7 +1318,7 @@ FIM
 
 .services-flexbox {
   flex-direction: column;
-  height: 950px;
+  height: 1000px;
   padding: 35px 0 0;
 }
 
@@ -1335,11 +1335,11 @@ FIM
 
 .services-description {
   margin-left: 2.5px;
-  font-size: 0.99em;
+  font-size: 1.04em;
 }
 
 .about-us {
- font-size: 0.99em;
+ font-size: 1.04em;
 }
 
 .powered-by {
@@ -1348,7 +1348,7 @@ FIM
 }
 
 .zep-description, .flesy-description, .linkedin-description {
-  font-size: 0.99em;
+  font-size: 1.04em;
 } 
 
 .mission-led {
@@ -1459,13 +1459,13 @@ FIM
 
 .subtitle {
   margin-top: 2px;
-  font-size: 1.1em;
-  line-height: 25px;
+  font-size: 1.12em;
+  line-height: 28px;
 }
 
 .services-flexbox {
   flex-direction: column;
-  height: 930px;
+  height: 980px;
   padding: 35px 1.5% 0;
 }
 
@@ -1478,7 +1478,7 @@ FIM
 }
 
 .services-description {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .zep-description, .flesy-description, .linkedin-description {
@@ -1487,7 +1487,7 @@ FIM
 
 .about {
  padding-top: 60px;
- height: 1755px;  
+ height: 1800px;  
 }
 
 
