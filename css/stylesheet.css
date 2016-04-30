@@ -1459,13 +1459,13 @@ FIM
 
 .subtitle {
   margin-top: 2px;
-  font-size: 1.03em;
+  font-size: 1.1em;
   line-height: 25px;
 }
 
 .services-flexbox {
   flex-direction: column;
-  height: 865px;
+  height: 930px;
   padding: 35px 1.5% 0;
 }
 
@@ -1474,20 +1474,20 @@ FIM
 }
 
 .about-us {
-  font-size: 1.05em;
+  font-size: 1.1em;
 }
 
 .services-description {
-  font-size: 0.96em;
+  font-size: 1em;
 }
 
 .zep-description, .flesy-description, .linkedin-description {
-  font-size: 1.05em;
+  font-size: 1.1em;
 } 
 
 .about {
  padding-top: 60px;
- height: 1680px;  
+ height: 1755px;  
 }
 
 
@@ -1497,7 +1497,7 @@ FIM
 
 
 .recent {
-  height: 1830px;
+  height: 1835px;
   padding-top: 10px;
 }
 
