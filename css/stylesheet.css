@@ -1333,7 +1333,7 @@ FIM
 .services-flexbox {
   -webkit-flex-direction: column;
   flex-direction: column;
-  height: 1010px;
+  height: 995px;
   padding: 35px 0 0;
 }
 
@@ -1350,7 +1350,7 @@ FIM
 
 .services-description {
   margin-left: 2.5px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-size: 1.02em;
 }
 
