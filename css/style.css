@@ -767,7 +767,7 @@ xclip
   opacity: 1;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 568px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
 .cd-headline.clip .cd-words-wrapper::after {
   /* line */
   top: 18px;
