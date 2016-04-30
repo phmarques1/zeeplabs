@@ -215,7 +215,7 @@ body.down header.clonedHeader {
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  font-size: 3.8em;
+  font-size: 3.4em;
   font-weight: 700;
   letter-spacing: 3px;
   line-height: 105px;
@@ -231,7 +231,7 @@ body.down header.clonedHeader {
 
 .subtitle {
   max-width: 494px;
-  margin: 15px auto 0;
+  margin: 2px auto 0;
   text-align: center;
   color: #fff;
   font-size: 1.15em;
@@ -728,7 +728,7 @@ MEDIA QUERIES
 *****************************************************************
 ****************************************************************/
 
-@media screen and (max-width: 1153px) and (min-width: 769px) {
+@media screen and (max-width: 1199px) and (min-width: 769px) {
 
 .cd-headline {
   font-size: 2.7em;
@@ -880,8 +880,8 @@ MEDIA QUERIES
 }
 
 .subtitle {
-  margin-top: 10px;
-  font-size: 1.1em;
+  margin-top: 5px;
+  font-size: 1.2em;
   line-height: 28px;
 }
 
@@ -1029,14 +1029,14 @@ MEDIA QUERIES
 @media screen and (max-width: 480px) and (min-width: 321px) {
 
 .cd-headline {
-  font-size: 1.2em;
+  font-size: 1.22em;
   padding: 0 1%;
   line-height: 70px;
   letter-spacing: 1px;
 }
 
 .subtitle {
-  margin-top: 5px;
+  margin-top: -5px;
   font-size: 0.95em;
   line-height: 25px;
 }
@@ -1231,16 +1231,16 @@ FIM
 }
 
 .cd-headline {
-  font-size: 1.35em;
+  font-size: 1.26em;
   padding: 0 1%;
   line-height: 60px;
   letter-spacing: 1px;
 }
 
 .subtitle {
-  margin-top: 5px;
-  font-size: 0.95em;
-  line-height: 25px;
+  margin-top: -5px;
+  font-size: 0.93em;
+  line-height: 22px;
 }
 
 .flesy-container {
@@ -1451,15 +1451,15 @@ FIM
 }
 
 .cd-headline {
-  font-size: 1.6em;
+  font-size: 1.51em;
   padding: 0 1%;
   line-height: 60px;
   letter-spacing: 1px;
 }
 
 .subtitle {
-  margin-top: 5px;
-  font-size: 1em;
+  margin-top: 1px;
+  font-size: 0.98em;
   line-height: 25px;
 }
 
@@ -1519,16 +1519,16 @@ FIM
 }
 
 .cd-headline {
-  font-size: 1.75em;
+  font-size: 1.68em;
   padding: 0 1%;
   line-height: 60px;
   letter-spacing: 1px;
 }
 
 .subtitle {
-  margin-top: 10px;
-  font-size: 1.1em;
-  line-height: 28px;
+  margin-top: 2px;
+  font-size: 1.07em;
+  line-height: 26px;
 }
 
 .services-flexbox {
