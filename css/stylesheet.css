@@ -1227,6 +1227,10 @@ FIM
   display: none;
 }
 
+.clonedHeader {
+  display: none;
+}
+
 .top, .top-fixed {
   text-align: center;
 }
@@ -1346,6 +1350,7 @@ FIM
 
 .services-description {
   margin-left: 2.5px;
+  margin-bottom: 15px;
   font-size: 1.02em;
 }
 
@@ -1410,17 +1415,17 @@ FIM
 }
 
 .footer-center {
-  order: 1;
+ -webkit-order: 1;
   margin: 5px 0;
 }
 
 .email-contact {
-  order: 2;
+  -webkit-order: 2;
   margin-bottom: 10px;
 }
 
 .love {
-  order: 3;
+  -webkit-order: 3;
   margin-bottom: 2px;
 }
 
