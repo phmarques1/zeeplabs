@@ -728,7 +728,7 @@ MEDIA QUERIES
 *****************************************************************
 ****************************************************************/
 
-@media screen and (max-width: 1199px) and (min-width: 769px) {
+@media screen and (max-width: 1153px) and (min-width: 769px) {
 
 .cd-headline {
   font-size: 2.7em;
@@ -743,6 +743,7 @@ MEDIA QUERIES
 }
 
 .flesy-container {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -789,6 +790,7 @@ MEDIA QUERIES
 }
 
 .services-flexbox {
+  -webkit-flex-direction: column;
   flex-direction: column;
 
 }
@@ -845,6 +847,7 @@ MEDIA QUERIES
 }
 
 .footer-wrap {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -886,6 +889,7 @@ MEDIA QUERIES
 }
 
 .flesy-container {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -941,6 +945,7 @@ MEDIA QUERIES
 }
 
 .services-flexbox {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1000,6 +1005,7 @@ MEDIA QUERIES
 }
 
 .footer-wrap {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1042,6 +1048,7 @@ MEDIA QUERIES
 }
 
 .flesy-container {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1111,6 +1118,7 @@ MEDIA QUERIES
 }
 
 .services-flexbox {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1170,6 +1178,7 @@ MEDIA QUERIES
 }
 
 .footer-wrap {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1244,6 +1253,7 @@ FIM
 }
 
 .flesy-container {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1317,6 +1327,7 @@ FIM
 }
 
 .services-flexbox {
+  -webkit-flex-direction: column;
   flex-direction: column;
   height: 1010px;
   padding: 35px 0 0;
@@ -1394,6 +1405,7 @@ FIM
 }
 
 .footer-wrap {
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1464,6 +1476,7 @@ FIM
 }
 
 .services-flexbox {
+  -webkit-flex-direction: column;
   flex-direction: column;
   height: 980px;
   padding: 35px 1.5% 0;
@@ -1553,6 +1566,7 @@ FIM
 }
 
 .services-flexbox {
+  -webkit-flex-direction: column;
   flex-direction: column;
   height: 1000px;
   padding: 35px 1.5% 0;
