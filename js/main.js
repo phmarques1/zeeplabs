@@ -210,14 +210,27 @@ jQuery(document).ready(function($){
 /** responsive menu toggle **/
 
 $(document).ready(function(){
-	$('.nav-icon1, .trigger').click(function(){
+	$('.nav-icon1').click(function(){
 		$(this).toggleClass('open1');
-   		$(this).toggleClass('active');
+		$('#overlay').toggleClass('open');
 
-		$('#overlay').toggleClass('open')
+		  if ($('.nav-icon1').attr('data-click-state') == 0) { 
 
+		  	$('body').css('overflow', 'hidden');
+
+		    $('.nav-icon1').attr('data-click-state', 1); 
+
+		  } else if ($('.nav-icon1').attr('data-click-state') == 1) { 
+		    
+		    $('body').css('overflow', 'inherit');
+
+		    $('.nav-icon1').attr('data-click-state', 0);
+
+		  }
 	});
 });
+
+
 
 
 modalShown = function () {
