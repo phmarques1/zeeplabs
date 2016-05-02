@@ -326,11 +326,21 @@ li:last-child {
   margin-right: 10px;
 }
 
+.selected, .selected-black {
+  padding-bottom: 1px;
+  border-bottom: 2px solid #fff;
+}
+
+.selected-black {
+  border-bottom: 2px solid #000; 
+}
+
 .sliding-middle-out, .sliding-middle-out-fixed {
   display: inline-block;
   position: relative;
   padding-bottom: 3px;
 }
+
 .sliding-middle-out:after, .sliding-middle-out-fixed:after {
   content: '';
   display: block;
@@ -379,7 +389,7 @@ li:last-child {
 
 
 .background {
-    background: url('../img/bg.png');
+    background: url('../img/bg-mission.png');
     background-repeat:no-repeat;
     /* custom background-position */
     background-position:50% 50%;
@@ -446,7 +456,7 @@ li:last-child {
 }
 
 .subtitle {
-  max-width: 494px;
+  max-width: 480px;
   margin: 2px auto 0;
   text-align: center;
   color: #fff;
@@ -456,47 +466,21 @@ li:last-child {
   line-height: 30px;
 }
 
-.about {
-  width: 100%;
-  height: 1290px;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+0,f6f6f6+89,fcfcfc+100 */
-  background: rgb(254,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(246,246,246,1) 89%, rgba(252,252,252,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(246,246,246,1) 89%,rgba(252,252,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(246,246,246,1) 89%,rgba(252,252,252,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
-  text-align: center;
-  padding: 87px 5% 0;
-}
 
-.intro {
-  font-size: 1.2em;
-  color: black;
-  font-weight: 300;
-  margin-bottom: -5px;
-}
 
-.powered-by {
-  margin: 0 auto;
-  max-width: 960px;
-  text-align: center;
-  font-size: 2.2em;
-  font-weight: 800;
-  letter-spacing: 10px;
-  color: #000;
-  text-transform: uppercase;
-}
 
-.humans {
-  color: #fff;
-  margin-top: 55px;
-}
 
-.mission-led {
-  margin-top: 90px;
-}
 
-.help {
+
+
+
+
+
+
+/*********** FOOTER ***********/
+
+
+/*.help {
   text-transform: none;
   color: #fff;
   font-size: 1.1em;
@@ -504,324 +488,6 @@ li:last-child {
   letter-spacing: 7px;
   margin-top: 95px;
 }
-
-.about-us {
-  margin: 35px auto 0;
-  max-width: 760px;
-  text-align: center;
-  font-size: 1.05em;
-  line-height: 1.7;
-  font-weight: 300;
-  color: rgb(100,100,100);
-}
-
-.flat-devices {
-  margin-top: 60px;
-  background-size: 1174px 626px;
-  max-height: 313px;
-}
-
-.core-services {
-  margin: 0 auto;
-  max-width: 1100px;
-}
-
-.core-title, 
-.work-title {
-  margin: 80px auto 0;
-  text-align: left;
-  font-size: 0.95em;
-  line-height: 1.7;
-  font-weight: 600;
-  color: black;
-}
-
-.work-title {
-  margin-top: 60px;
-  font-size: 2.5em;
-  color: #fff;
-  text-align: center;
-}
-
-.love-to-do,
-.recent-work {
-  color: rgb(120,120,120);
-  font-weight: 300;
-}
-
-.line-separator-grey {
-  height: 1px;
-  background: rgb(210,210,210);
-  border-bottom: 1px solid rgb(210,210,210);
-}
-
-.bar {
-  margin-top: 120px;
-  max-width: 100%;
-  height: 45px;
-  border-top: 1px solid #9eb9d5;
-  border-bottom: 1px solid #9eb9d5;
-}
-
-.bar2 {
-  margin-top: 70px;
-}
-
-.bar3 {
-  margin-top: 85px;
-}
-
-.bar-title {
-  background: rgba(157,185,214,0.1);
-  border-right: 1px solid #9eb9d5;
-  padding: 11px 26px;
-  display: inline-flex;
-  float: left;
-}
-
-.more, .see-all {
-  margin: 12px auto;
-  float: right;
-  font-size: 0.9em;
-  font-weight: 300;
-}
-
-.see-all {
-  color: #fff;
-}
-
-.approach, .work, .mission-bar {
-  font-size: 0.8em;
-  font-weight: 300;
-  color: #333E48;
-  letter-spacing: 2px;
-  margin-top: 3px;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.work {
-  color: white;
-}
-
-.services-flexbox {
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  margin: 30px 0 0;
-  background-color: white;
-  border: 1px solid #e6e6e6; 
-  padding: 45px 10px 40px;
-  box-shadow: 0 2px 1px rgb(233,233,233);
-  overflow: hidden;
-}
-
-.prod-strategy, 
-.ui-ux-design, 
-.development {
-  -webkit-flex-grow: 1;
-  -moz-flex-grow: 1;
-  -ms-flex-grow: 1;
-  flex-grow: 1;
-}
-
-.prod-strategy, 
-.ui-ux-design {
-  border-right: 1px solid #e6e6e6;  
-}
-
-
-.strategy-title, 
-.design-title,
-.dev-title {
-  margin: 15px auto;
-  font-weight: 600;
-}
-
-.services-description {
-  max-width: 250px;
-  margin: 0 auto;
-  font-size: 0.95em;
-  line-height: 1.7;
-  font-weight: 300;
-  color: rgb(120,120,120); 
-}
-
-.recent {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#343a64+0,5a6ead+66,7798e5+100 */
-  background: rgb(52,58,100); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(52,58,100,1) 0%, rgba(90,110,173,1) 66%, rgba(119,152,229,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(52,58,100,1) 0%,rgba(90,110,173,1) 66%,rgba(119,152,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(52,58,100,1) 0%,rgba(90,110,173,1) 66%,rgba(119,152,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343a64', endColorstr='#7798e5',GradientType=0 ); /* IE6-9 */
-  width: 100%;
-  height: 2890px;
-  text-align: center;
-  padding: 30px 5% 0;
-}
-
-.recent-work {
-  color: rgb(200,200,200);
-}
-
-.line-separator-dark {
-  height: 1px;
-  background: rgb(190,190,190);
-  border-bottom: 1px solid rgb(190,190,190);
-}
-
-.zep {
-  margin-top: 50px;
-  padding-left: 8%;
-  background-size: 2218px 1002px;
-  max-height: 501px;
-}
-
-.zep-title, .flesy-title, .linkedin-title {
-  max-width: 960px;
-  margin: 60px auto 10px;
-  text-align: center;
-  color: #fff;
-  font-size: 2em;
-  font-weight: 800;
-  letter-spacing: 3px;
-}
-
-.zep-title {
-  margin-top: 80px;
-}
-
-.flesy-container {
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  margin-top: 120px;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-
-.linkedin-container {
-  margin-top: 170px;
-}
-
-.zep-description, .flesy-description, .linkedin-description {
-  max-width: 600px;
-  margin: 0 auto 35px;
-  text-align: center;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 28px;
-}
-
-.flesy-title, .flesy-description {
-  text-align: left;
-}
-
-.flesy-info {
-  -moz-flex-grow: 1;
-  -ms-flex-grow: 1;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-}
-
-.flesy-title {
-  margin-top: 0;
-}
-
-.flesy-description {
-  max-width: 340px;
-  margin: 0;
-}
-
-.flesy-img {
-  background-size: 1208px 1400px;
-  max-height: 700px;
-}
-
-.play-btn, .download-flesy, .linkedin-btn {
-  margin: 17px 10px;
-  text-align: center;
-  padding: 0.8em 3em;
-  background-color: transparent;
-  text-shadow: none;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  line-height: 20px;
-  font-size: 0.85em;
-  letter-spacing: 1px;
-}
-
-.download-flesy {
-  margin: 25px auto;
-  float: left;
-}
-
-.play-btn:hover, .download-flesy:hover, .linkedin-btn:hover {
-  background-color: #fff;
-  color: #373F6B;
-}
-
-.linkedin {
-  margin-top: 45px;
-  background-size: 2880px 1790px;
-  max-height: 895px;
-  box-shadow: 0 3px 50px #202640;
-}
-
-.mission-bar {
- color: #333E48; 
-}
-
-.mission {
-  width: 100%;
-  height: 685px;
-  text-align: center;
-  overflow: hidden;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+0,fff9fa+89,ffedee+100 */
-  background: rgb(254,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(255,249,250,1) 89%, rgba(255,237,238,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(255,249,250,1) 89%,rgba(255,237,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(255,249,250,1) 89%,rgba(255,237,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#ffedee',GradientType=0 ); /* IE6-9 */
-}
-
-.mission-statement {
-  font-family: 'reklame-script';
-  margin: 100px auto 0;
-  max-width: 840px;
-  text-align: center;
-  font-size: 3.6em;
-  line-height: 1.3;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #000;
-}
-
-.rocket-container {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.rocket-img {
-  background-size: 142px 394px;
-  max-height: 197px;
-  margin: 70px auto 0;
-}
-
-
-.icons-bottom {
-  margin-top: -130px;
-  background-size: 2924px 518px;
-  max-height: 259px; 
-}
-
 
 .talk {
   margin-top: 5px;
@@ -952,7 +618,7 @@ footer {
   width: 400px;
   height: 15px;
 }
-
+*/
 
 
 
@@ -985,112 +651,14 @@ MEDIA QUERIES
   line-height: 28px;
 }
 
-.flesy-container {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.flesy-title, .flesy-description {
-  text-align: center;
-}
-
-.flesy-description {
-  margin-bottom: 45px;
-  max-width: 500px;
-}
-
-.flesy-img {
-  background-size: 1090px 1262px;
-  max-height: 631px;
-}
-
-.download-flesy {
-  float: none;
-}
-
-.flesy-img {
-  margin-top: 65px;
-}
-
-.flesy-container {
-  margin-top: 40px;
-}
-
-.linkedin-container {
-  margin-top: 100px;
-}
-
-.about {
- height: 1650px;  
-}
-
-.recent {
-  height: 2700px;
-}
-
-.services-description {
-  max-width: 600px;
-}
-
-.services-flexbox {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-
-}
-
-.prod-strategy, 
-.ui-ux-design, 
-.development {
-  margin: 30px;
-}
-
-.about-us {
-  font-size: 0.95em;
-}
-
-.prod-strategy, 
-.ui-ux-design {
-  border-right: none;  
-}
-
-.powered-by {
-  font-size: 1.5em;
-}
-
-.mission {
-  height: 750px;
-  padding: 0 5% 0;
-}
-
-.mission-statement {
-  margin: 60px auto 0;
-  max-width: 840px;
-  font-size: 3.6em;
-  line-height: 1.3;
-  letter-spacing: 2px;
-  padding: 3%;
+.help {
+  font-size: 1.2em;
 }
 
 .talk {
   margin-top: 10px;
   font-size: 5em;
   padding: 0;
-}
-
-.rocket-img {
-  margin: 60px auto 0;
-}
-
-.icons-bottom {
-  margin-top: -100px;
-}
-
-.help {
-  font-size: 1.2em;
 }
 
 .footer-wrap {
@@ -1139,7 +707,6 @@ MEDIA QUERIES
   display: none;
 }
 
-
 .cd-headline {
   font-size: 1.9em;
   padding: 0 1%;
@@ -1153,124 +720,14 @@ MEDIA QUERIES
   line-height: 28px;
 }
 
-.flesy-container {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.flesy-title, .flesy-description {
-  text-align: center;
-}
-
-.flesy-description {
-  margin-bottom: 45px;
-  max-width: 500px;
-}
-
-.flesy-img {
-  background-size: 1090px 1262px;
-  max-height: 631px;
-}
-
-.download-flesy {
-  float: none;
-}
-
-.flesy-img {
-  margin-top: 65px;
-}
-
-.flesy-container {
-  margin-top: 40px;
-}
-
-.linkedin-container {
-  margin-top: 100px;
-}
-
-.about {
- height: 1650px;  
-}
-
-.recent {
-  height: 2475px;
-  padding-top: 10px;
-}
-
-.zep-title {
-  margin-top: 70px;
-}
-
-.icons-bottom {
-  display: none;
-}
-
-.services-description {
-  max-width: 600px;
-}
-
-.services-flexbox {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.prod-strategy, 
-.ui-ux-design, 
-.development {
-  margin: 30px;
-}
-
-.about-us {
-  font-size: 0.95em;
-}
-
-.prod-strategy, 
-.ui-ux-design {
-  border-right: none;  
-}
-
-.powered-by {
-  font-size: 1.5em;
-}
-
-.mission-led {
-  margin-top: 105px;
-}
-
-.mission {
-  height: 650px;
-  padding: 0 5% 0;
-}
-
-.mission-statement {
-  margin: 50px auto 0;
-  max-width: 840px;
-  font-size: 2.7em;
-  line-height: 1.3;
-  letter-spacing: 2px;
-  padding: 3%;
+.help {
+  font-size: 1.2em;
 }
 
 .talk {
   margin-top: 0;
   font-size: 5.5em;
   padding: 0;
-}
-
-.rocket-img {
-  margin: 60px auto 0;
-}
-
-.icons-bottom {
-  margin-top: -100px;
-}
-
-.help {
-  font-size: 1.2em;
 }
 
 .footer-wrap {
@@ -1320,7 +777,6 @@ MEDIA QUERIES
   display: none;
 }
 
-
 .cd-headline {
   font-size: 1.22em;
   padding: 0 1%;
@@ -1334,133 +790,14 @@ MEDIA QUERIES
   line-height: 25px;
 }
 
-.flesy-container {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.flesy-title, .flesy-description {
-  text-align: center;
-}
-
-.flesy-description {
-  margin-bottom: 45px;
-  max-width: 500px;
-}
-
-.flesy-img {
-  background-size: 648px 750px;
-  max-height: 375px;
-}
-
-.download-flesy {
-  float: none;
-}
-
-.flesy-img {
-  margin-top: 65px;
-}
-
-.flesy-container {
-  margin-top: 40px;
-}
-
-.linkedin-container {
-  margin-top: 100px;
-}
-
-.about {
- height: 1765px;  
-}
-
-.recent {
-  height: 2015px;
-  padding-top: 10px;
-}
-
-.zep-title, .flesy-title, .linkedin-title {
-  margin-top: 40px;
-  font-size: 1.6em;
-}
-
-.zep-title {
-  margin-top: 80px;
-}
-
-.linkedin-title {
-  margin-top: 120px;
-}
-
-.icons-bottom {
-  display: none;
-}
-
-.services-description {
-  max-width: 600px;
-}
-
-.services-flexbox {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.prod-strategy, 
-.ui-ux-design, 
-.development {
-  margin: 30px;
-}
-
-.about-us {
-  font-size: 0.95em;
-}
-
-.prod-strategy, 
-.ui-ux-design {
-  border-right: none;  
-}
-
-.powered-by {
-  font-size: 1.5em;
-}
-
-.mission-led {
-  margin-top: 105px;
-}
-
-.mission {
-  height: 650px;
-  padding: 0 5% 0;
-}
-
-.mission-statement {
-  margin: 50px auto 0;
-  max-width: 840px;
-  font-size: 2.1em;
-  line-height: 1.3;
-  letter-spacing: 2px;
-  padding: 3%;
+.help {
+  font-size: 1.2em;
 }
 
 .talk {
   margin-top: 0;
   font-size: 5.5em;
   padding: 0;
-}
-
-.rocket-img {
-  margin: 60px auto 0;
-}
-
-.icons-bottom {
-  margin-top: -100px;
-}
-
-.help {
-  font-size: 1.2em;
 }
 
 .footer-wrap {
@@ -1484,8 +821,6 @@ MEDIA QUERIES
   order: 3;
   margin-bottom: 5px;
 }
-
-
 
 .line {
   height: 12px;
@@ -1530,7 +865,6 @@ FIM
   float: left;
 }
 
-
 .contact-top, .contact-fixed {
   display: none;
 }
@@ -1556,161 +890,19 @@ FIM
   line-height: 25px;
 }
 
-.flesy-container {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.flesy-title, .flesy-description {
-  text-align: center;
-}
-
-.flesy-description {
-  margin-bottom: 45px;
-  max-width: 500px;
-}
-
-.flesy-img {
-  background-size: 478px 554px;
-  max-height: 277px;
-}
-
-.download-flesy {
-  float: none;
-}
-
-.flesy-img {
-  margin-top: 55px;
-}
-
-.flesy-container {
-  margin-top: 40px;
-}
-
-.linkedin-container {
-  margin-top: 100px;
-}
-
-.about {
- padding-top: 60px;
- height: 1810px;  
-}
-
-.bar {
-  margin-top: 75px;
-}
-
-.bar2 {
-  margin-top: 60px;
-}
-
-.bar3 {
-  margin-top: 60px;
-}
-
-.bar-title {
-  padding: 11px 12px;
-}
-
-.recent {
-  height: 1810px;
-  padding-top: 10px;
-}
-
-.zep-title, .flesy-title, .linkedin-title {
-  margin-top: 35px;
-  font-size: 1.5em;
-}
-
-.zep-title {
-  margin-top: 60px;
-}
-
-.icons-bottom {
-  display: none;
-}
-
-.services-flexbox {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 995px;
-  padding: 35px 0 0;
-}
-
-.prod-strategy, 
-.ui-ux-design, 
-.development {
-  margin: 15px;
-  border-right: 0;
-}
-
-.strategy-title, .design-title, .dev-title {
-  font-size: 1.15em;
-}
-
-.services-description {
-  margin-left: 2.5px;
-  margin-bottom: 25px;
-  font-size: 1.02em;
-}
-
-.about-us {
- font-size: 1.02em;
-}
-
-.powered-by {
-  font-size: 1.3em;
-  letter-spacing: 3px;
-}
-
-.zep-description, .flesy-description, .linkedin-description {
-  font-size: 1.02em;
-} 
-
-.mission-led {
-  margin-top: 105px;
-}
-
-.mission {
-  height:570px;
-  padding: 0 5% 0;
-}
-
-.mission-statement {
-  margin: 50px auto 0;
-  max-width: 840px;
-  font-size: 1.5em;
-  line-height: 1.3;
-  letter-spacing: 2px;
-  padding: 3%;
-}
-
-
 .hire-us-container {
   height: 300px;
+}
+
+.help {
+  margin-top: 50px;
+  font-size: 1em;
 }
 
 .talk {
   margin-top: 0;
   font-size: 3.5em;
   padding: 0;
-}
-
-.rocket-img {
-  margin: 60px auto 0;
-}
-
-.icons-bottom {
-  margin-top: -100px;
-}
-
-.help {
-  margin-top: 50px;
-  font-size: 1em;
 }
 
 .footer-wrap {
@@ -1795,7 +987,6 @@ FIM
   float: left;
 }
 
-
 .logo-black {
   margin: 22px auto;
 }
@@ -1811,51 +1002,6 @@ FIM
   margin-top: 2px;
   font-size: 1.12em;
   line-height: 28px;
-}
-
-.services-flexbox {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 980px;
-  padding: 35px 1.5% 0;
-}
-
-.powered-by {
-  font-size: 1.55em;
-}
-
-.about-us {
-  font-size: 1.1em;
-}
-
-.services-description {
-  font-size: 1.1em;
-}
-
-.zep-description, .flesy-description, .linkedin-description {
-  font-size: 1.1em;
-} 
-
-.about {
- padding-top: 60px;
- height: 1800px;  
-}
-
-
-.bar2 {
-  margin-top: 55px;
-}
-
-
-.recent {
-  height: 1835px;
-  padding-top: 10px;
-}
-
-.mission {
-  height: 580px;
 }
 
 .help {
@@ -1902,7 +1048,6 @@ FIM
   float: left;
 }
 
-
 .logo-black {
   margin: 19px auto;
 }
@@ -1918,41 +1063,6 @@ FIM
   margin-top: 4px;
   font-size: 1.13em;
   line-height: 28px;
-}
-
-.services-flexbox {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 1000px;
-  padding: 35px 1.5% 0;
-}
-
-.about {
- padding-top: 60px;
- height: 1850px;  
-}
-
-.powered-by {
-  font-size: 1.6em;
-}
-
-.about-us {
-  font-size: 1.1em;
-}
-
-.services-description {
-  font-size: 1.1em;
-}
-
-.zep-description, .flesy-description, .linkedin-description {
-  font-size: 1.1em;
-} 
-
-.recent {
-  height: 1880px;
-  padding-top: 10px;
 }
 
 .help {
