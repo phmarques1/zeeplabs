@@ -257,7 +257,12 @@ html, body {
 }
 
 
-
+.fixIt {
+    position: fixed;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+  }
 
 img {
   max-width: 100%;

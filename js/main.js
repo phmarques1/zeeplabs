@@ -216,13 +216,13 @@ $(document).ready(function(){
 
 		  if ($('.nav-icon1').attr('data-click-state') == 0) { 
 
-		  	$('body').css('overflow', 'hidden');
+		  	$('body').addClass('fixIt');
 
 		    $('.nav-icon1').attr('data-click-state', 1); 
 
 		  } else if ($('.nav-icon1').attr('data-click-state') == 1) { 
 		    
-		    $('body').css('overflow', 'inherit');
+		    $('body').removeClass('fixIt');
 
 		    $('.nav-icon1').attr('data-click-state', 0);
 
