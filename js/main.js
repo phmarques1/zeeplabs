@@ -203,3 +203,29 @@ jQuery(document).ready(function($){
         }), n
     }, n
 });
+
+
+
+
+/** responsive menu toggle **/
+
+$(document).ready(function(){
+	$('.nav-icon1, .trigger').click(function(){
+		$(this).toggleClass('open1');
+   		$(this).toggleClass('active');
+
+		$('#overlay').toggleClass('open')
+
+	});
+});
+
+
+modalShown = function () {
+    $('body').css('overflow', 'hidden');
+},
+
+modalHidden = function () {
+    $('body').css('overflow', 'auto');
+}
+
+
