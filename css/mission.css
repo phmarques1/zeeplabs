@@ -456,8 +456,10 @@ li:last-child {
 }
 
 .subtitle {
-  max-width: 480px;
+  max-width: 660px;
   margin: 2px auto 0;
+  padding-left: 6%;
+  padding-right: 6%;
   text-align: center;
   color: #fff;
   font-size: 1.15em;
