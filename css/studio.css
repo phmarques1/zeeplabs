@@ -501,14 +501,20 @@ li:last-child {
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
    */
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   display: flex;
 
   /**
    * Align the children in the center, along
    * the main axis, which is horizontal in this case.
    */
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center;
-  margin: 80px auto 0;
+  margin: 70px auto 0;
   max-width: 960px;
   padding: 10px;
 }
@@ -520,34 +526,37 @@ li:last-child {
    * reverse order of how they appear in the
    * markup.
    */
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse; 
   flex-direction: row-reverse;
 }
-  .featureTitle,
-  .featureListItem__icon,
-  .featureListItem__description {
-    padding: 5px 15px;
-  }
 
-  .featureListItem__icon {
-    font-size: 50px;
-    line-height: 0;
-  }
+.feature-left {
+  flex-grow: 2;
+}
 
-  .comm-icon {
-    margin-left: 50px;
-  }
+.featureTitle,
+.featureListItem__icon,
+.featureListItem__description {
+  padding: 5px 10px;
+}
 
-  .no-time-icon {
-    margin-right: 100px;
-  }
+.featureListItem__icon {
+  font-size: 50px;
+  line-height: 0;
+}
 
-  .featureListItem__description {
-    color: rgb(73,73,73);
-    max-width: 460px;
-    font-size: 1.05em;
-    line-height: 1.7;
-  }
+.no-time-icon {
+  flex-grow: 2;
+}
 
+.featureListItem__description {
+  color: rgb(73,73,73);
+  max-width: 490px;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
 
 .featureTitle {
   color: #000;
@@ -558,11 +567,6 @@ li:last-child {
 .comm {
   background-size: 560px 476px;
   max-height: 238px; 
-}
-
-.no-time {
-  background-size: 444px 366px;
-  max-height: 183px; 
 }
 
 .line-separator {
