@@ -468,8 +468,8 @@ li:last-child {
 }
 
 .studio {
-  height: 1000px;
-  max-width: 720px;
+  height: 2000px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 85px 10px;
 }
@@ -487,6 +487,7 @@ li:last-child {
 
 .studio-description {
   margin: 22px auto 0;
+  max-width: 770px;
   text-align: center;
   color: rgb(73,73,73);
   font-weight: 300;
@@ -494,12 +495,82 @@ li:last-child {
   line-height: 1.7;
 }
 
+
+.featureListItem {
+  /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+  display: flex;
+
+  /**
+   * Align the children in the center, along
+   * the main axis, which is horizontal in this case.
+   */
+  align-items: center;
+  margin: 80px auto 0;
+  max-width: 960px;
+  padding: 10px;
+}
+
+.featureListItem--reverse {
+  /**
+   * We can specify the flex-direction so that
+   * the children elements are displayed in the
+   * reverse order of how they appear in the
+   * markup.
+   */
+  flex-direction: row-reverse;
+}
+  .featureTitle,
+  .featureListItem__icon,
+  .featureListItem__description {
+    padding: 5px 15px;
+  }
+
+  .featureListItem__icon {
+    font-size: 50px;
+    line-height: 0;
+  }
+
+  .comm-icon {
+    margin-left: 50px;
+  }
+
+  .no-time-icon {
+    margin-right: 100px;
+  }
+
+  .featureListItem__description {
+    color: rgb(73,73,73);
+    max-width: 460px;
+    font-size: 1.05em;
+    line-height: 1.7;
+  }
+
+
+.featureTitle {
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.comm {
+  background-size: 560px 476px;
+  max-height: 238px; 
+}
+
+.no-time {
+  background-size: 444px 366px;
+  max-height: 183px; 
+}
+
 .line-separator {
   height: 3px;
   background: #FF303F;
   border-bottom: 1px solid #FF303F;
   width: 100px;
-  margin: 60px auto;
+  margin: 70px auto;
 }
 
 
