@@ -308,7 +308,7 @@ body.down header.clonedHeader {
   margin-top: 18px;
 }
 
-li {
+.inline-menu {
   display: inline;
 }
 
@@ -322,7 +322,7 @@ li {
   letter-spacing: 1.3px;
 }
 
-li:last-child {
+.inline-menu:last-child {
   margin-right: 10px;
 }
 
@@ -468,7 +468,7 @@ li:last-child {
 }
 
 .studio {
-  height: 2000px;
+  height: 1420px;
   max-width: 960px;
   margin: 0 auto;
   padding: 85px 10px;
@@ -577,6 +577,80 @@ li:last-child {
   margin: 70px auto;
 }
 
+
+.values {
+  max-width: 960px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.values_Title {
+  text-align: center;
+  color: #000;
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 25px auto 40px;
+}
+
+.values_Blocks {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.value {
+  background: #35465c;
+  height: 300px;
+  width: 300px;
+  margin: 2px 2px;
+  padding: 0 1%;
+  list-style-type: none;
+  display: list-item;
+}
+
+.value-container {
+  height: 100%;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.v-name, .value-description {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.v-name {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.value-description {
+  margin-top: 10px;
+}
 
 
 
@@ -848,6 +922,14 @@ MEDIA QUERIES
   line-height: 28px;
 }
 
+.studio {
+  height: 1400px;
+}
+
+.values {
+  height: 1090px;
+}
+
 .help {
   font-size: 1.2em;
 }
@@ -966,8 +1048,7 @@ FIM
 
 
 
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1136px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
 
         /***********************************
@@ -1039,12 +1120,16 @@ FIM
 }
 
 .studio {
-  height: 2400px;
+  height: 2180px;
   padding: 60px 2%;
 }
 
-.studio-info {
+.studio-info, .values_Title {
   font-size: 1.3em;
+}
+
+.values_Title {
+  margin-bottom: 25px;
 }
 
 .studio-description {
@@ -1057,12 +1142,6 @@ FIM
 .featureListItem {
   margin: 50px auto 0;
 }
-
-/*.featureTitle,
-.featureListItem__icon,
-.featureListItem__description {
-  padding: 5px 10px;
-}*/
 
 .featureTitle {
   font-size: 1.15em;
@@ -1079,6 +1158,12 @@ object {
   font-size: 1.04em;
   text-align: center;
 }
+
+
+.values {
+  height: 1950px;
+}
+
 
 .hire-us-container {
   height: 300px;
@@ -1195,6 +1280,10 @@ FIM
   line-height: 28px;
 }
 
+.studio {
+  height: 2130px;
+}
+
 .help {
   margin-top: 56px;
   font-size: 1em;
@@ -1254,6 +1343,10 @@ FIM
   margin-top: 4px;
   font-size: 1.13em;
   line-height: 28px;
+}
+
+.studio {
+  height: 2080px;
 }
 
 .help {
