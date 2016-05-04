@@ -684,7 +684,7 @@ li:last-child {
   background: linear-gradient(to bottom,  rgba(52,58,100,1) 0%,rgba(90,110,173,1) 66%,rgba(119,152,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343a64', endColorstr='#7798e5',GradientType=0 ); /* IE6-9 */
   width: 100%;
-  height: 2920px;
+  height: 2975px;
   text-align: center;
   padding: 30px 5% 0;
 }
