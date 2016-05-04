@@ -458,7 +458,7 @@ li:last-child {
 
 .about {
   width: 100%;
-  height: 1290px;
+  height: 1320px;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+0,f6f6f6+89,fcfcfc+100 */
   background: rgb(254,255,255); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(246,246,246,1) 89%, rgba(252,252,252,1) 100%); /* FF3.6-15 */
@@ -505,7 +505,7 @@ li:last-child {
   margin-top: 95px;
 }
 
-.about-us {
+.about-us, .our-studio-description, .recent-work-description, .our-mission-description {
   margin: 35px auto 0;
   max-width: 760px;
   text-align: center;
@@ -513,6 +513,22 @@ li:last-child {
   line-height: 1.7;
   font-weight: 300;
   color: rgb(100,100,100);
+}
+
+.our-studio-description, .recent-work-description, .our-mission-description {
+  margin: 5px auto 20px;
+}
+
+.recent-work-description {
+  color: #fff;
+}
+
+.our-studio-description {
+  margin-bottom: 40px;
+}
+
+.learn-more {
+  color: #fff;
 }
 
 .flat-devices {
@@ -543,8 +559,7 @@ li:last-child {
   text-align: center;
 }
 
-.love-to-do,
-.recent-work {
+.love-to-do {
   color: rgb(120,120,120);
   font-weight: 300;
 }
@@ -555,12 +570,34 @@ li:last-child {
   border-bottom: 1px solid rgb(210,210,210);
 }
 
-.bar {
+.our-studio, .recent-work, .our-mission {
+  max-width: 670px;
+  margin: 100px auto 0;
+  text-align: center;
+  color: #000;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+}
+
+.our-studio {
+  margin-top: 120px;
+}
+
+.recent-work {
+  margin-top: 70px;
+  color: #fff;
+}
+
+.our-mission {
+  margin-top: 80px;
+}
+
+/*.bar {
   margin-top: 120px;
   max-width: 100%;
   height: 45px;
-  border-top: 1px solid #9eb9d5;
-  border-bottom: 1px solid #9eb9d5;
 }
 
 .bar2 {
@@ -572,12 +609,10 @@ li:last-child {
 }
 
 .bar-title {
-  background: rgba(157,185,214,0.1);
-  border-right: 1px solid #9eb9d5;
   padding: 11px 26px;
   display: inline-flex;
   float: left;
-}
+}*/
 
 .more, .see-all {
   margin: 12px auto;
@@ -656,13 +691,9 @@ li:last-child {
   background: linear-gradient(to bottom,  rgba(52,58,100,1) 0%,rgba(90,110,173,1) 66%,rgba(119,152,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343a64', endColorstr='#7798e5',GradientType=0 ); /* IE6-9 */
   width: 100%;
-  height: 2890px;
+  height: 2920px;
   text-align: center;
   padding: 30px 5% 0;
-}
-
-.recent-work {
-  color: rgb(200,200,200);
 }
 
 .line-separator-dark {
@@ -683,9 +714,9 @@ li:last-child {
   margin: 60px auto 10px;
   text-align: center;
   color: #fff;
-  font-size: 2em;
-  font-weight: 800;
-  letter-spacing: 3px;
+  font-size: 1.7em;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .zep-title {
@@ -794,7 +825,7 @@ li:last-child {
 
 .mission-statement {
   font-family: 'reklame-script';
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   max-width: 840px;
   text-align: center;
   font-size: 3.6em;
@@ -1197,10 +1228,6 @@ MEDIA QUERIES
 .recent {
   height: 2475px;
   padding-top: 10px;
-}
-
-.zep-title {
-  margin-top: 70px;
 }
 
 .icons-bottom {
