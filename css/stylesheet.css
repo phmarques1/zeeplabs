@@ -1306,10 +1306,22 @@ MEDIA QUERIES
 @media screen and (max-width: 480px) and (min-width: 321px) {
 
 .nav-icon1 {
-  margin-top: 14px;
+  margin-top: 23px;
   margin-right: 15px;
   float: right;
   display: block;
+}
+
+.nav-icon1 span {
+  height: 2px;
+}
+
+.nav-icon1 span:nth-child(1) {
+  top: 11px;
+}
+
+.nav-icon1 span:nth-child(3) {
+  top: 25px;
 }
 
 .menu-ul, .menu-fixed {
