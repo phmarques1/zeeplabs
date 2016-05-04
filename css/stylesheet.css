@@ -379,7 +379,7 @@ li:last-child {
 
 
 .background {
-    background: url('../img/bg1.png');
+    background: url('../img/bg.jpg');
     background-repeat:no-repeat;
     /* custom background-position */
     background-position:50% 50%;
