@@ -555,7 +555,8 @@ li:last-child {
 .project_description {
   max-width: 1200px;
   font-size: 1.1em;
-  letter-spacing: 1px;
+  letter-spacing: normal;
+  font-weight: 300;
   margin: 20px auto 0;
   line-height: 1.8;
 }
