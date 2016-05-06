@@ -1336,7 +1336,7 @@ object {
 
 
 .values {
-  height: 1310px;
+  height: 1340px;
 }
 
 .value {
@@ -1468,6 +1468,15 @@ FIM
   width: 450px;
 }
 
+.values {
+  height: 1350px;
+}
+
+.value-description {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
 .help {
   margin-top: 56px;
   font-size: 1em;
@@ -1536,6 +1545,11 @@ FIM
 .value {
   height: 200px;
   width: 500px;
+}
+
+.value-description {
+  padding-right: 8%;
+  padding-left: 8%;
 }
 
 .help {
