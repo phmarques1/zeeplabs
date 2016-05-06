@@ -471,10 +471,10 @@ li:last-child {
 
 .mission-container {
   max-width: 770px;
-  font-size: 1.15em;
+  font-size: 1.05em;
   text-align: left;
   margin: 75px auto;
-  line-height: 1.85;
+  line-height: 1.75;
   padding: 0 35px;
   color: #333333;
 }
@@ -514,6 +514,7 @@ blockquote{
   box-shadow: 0px 0px 2px #ccc;
 }
 
+
 blockquote::before{
   content: "\201C"; /*Unicode for Left Double Quote*/
   
@@ -522,7 +523,6 @@ blockquote::before{
   font-size: 60px;
   font-weight: bold;
   color: #000;
-  
   /*Positioning*/
   position: absolute;
   left: 10px;
