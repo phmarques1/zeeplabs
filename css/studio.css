@@ -622,9 +622,9 @@ body.down header.clonedHeader {
 
 .value-container {
   height: 100%;
-  -webkit-display: flex;
-  -moz-display: flex;
-  -ms-display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   display: flex;
   -webkit-align-items: center;
   -moz-align-items: center;
