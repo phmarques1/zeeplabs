@@ -479,6 +479,18 @@ li:last-child {
   color: #333333;
 }
 
+.crazy-ones {
+  max-width: 670px;
+  margin: -5px auto 40px;
+  padding-top: 0;
+  text-align: center;
+  color: #000;
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+}
+
 .mission-bold {
   font-weight: 700;
   color: #000;
@@ -493,7 +505,13 @@ blockquote{
   margin: 40px 0;
   position: relative;
   height: 100%;
+  -webkit-display: flex;
+  -moz-isplay: flex;
+  -ms-display: flex;
   display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center;
   
   /*Font*/
@@ -817,6 +835,11 @@ MEDIA QUERIES
   line-height: 1.9;
 }
 
+.crazy-ones {
+  font-size: 1.9em;
+  margin-bottom: 30px;
+}
+
 .help {
   font-size: 1.2em;
 }
@@ -890,6 +913,11 @@ MEDIA QUERIES
 .mission-container {
   font-size: 1.05em;
   line-height: 1.75;
+}
+
+.crazy-ones {
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
 .help {
@@ -1015,6 +1043,12 @@ FIM
   line-height: 1.75;
 }
 
+.crazy-ones {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+}
+
 .help {
   margin-top: 55px;
   font-size: 1em;
@@ -1124,6 +1158,12 @@ FIM
   margin-top: 2px;
   font-size: 1.12em;
   line-height: 28px;
+}
+
+.crazy-ones {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  letter-spacing: 0;
 }
 
 .help {
