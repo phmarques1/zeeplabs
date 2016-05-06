@@ -1167,6 +1167,9 @@ MEDIA QUERIES
   display: none;
 }
 
+.clonedHeader {
+  display: none;
+}
 
 .cd-headline {
   font-size: 1.9em;
@@ -1356,6 +1359,9 @@ MEDIA QUERIES
   display: none;
 }
 
+.clonedHeader {
+  display: none;
+}
 
 .cd-headline {
   font-size: 1.22em;

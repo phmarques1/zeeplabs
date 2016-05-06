@@ -550,6 +550,10 @@ li:last-child {
   padding: 3% 2%;
 }
 
+.project-info {
+  padding: 0 4%;
+}
+
 .project_title, .project_description {
   max-width: 1200px;
   margin: 30px auto 0;
@@ -776,12 +780,6 @@ footer {
   color: #ed0f04;
 }
 
-.line {
-  background-size: 800px 30px;
-  width: 400px;
-  height: 15px;
-}
-
 
 
 
@@ -800,6 +798,14 @@ MEDIA QUERIES
 ****************************************************************/
 
 @media screen and (max-width: 1153px) and (min-width: 769px) {
+
+.project {
+  height: 470px;
+}
+
+.project_title {
+  font-size: 2.1em;
+}
 
 .cd-headline {
   font-size: 2.7em;
@@ -854,6 +860,19 @@ MEDIA QUERIES
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
 
+.project {
+  height: 400px;
+}
+
+.project_title {
+  font-size: 2em;
+}
+
+.project_description {
+  font-size: 1em;
+  margin: 8px auto 18px;
+}
+
 .nav-icon1 {
   margin-top: 14px;
   margin-right: 15px;
@@ -866,6 +885,10 @@ MEDIA QUERIES
 }
 
 .contact-top, .contact-fixed {
+  display: none;
+}
+
+.clonedHeader {
   display: none;
 }
 
@@ -924,6 +947,19 @@ MEDIA QUERIES
 
 @media screen and (max-width: 480px) and (min-width: 321px) {
 
+.project {
+  height: 310px;
+}
+
+.project_title {
+  font-size: 1.5em;
+}
+
+.project_description {
+  font-size: 0.95em;
+  margin: 8px auto 18px;
+}
+
 .nav-icon1 {
   margin-top: 14px;
   margin-right: 15px;
@@ -936,6 +972,10 @@ MEDIA QUERIES
 }
 
 .contact-top, .contact-fixed {
+  display: none;
+}
+
+.clonedHeader {
   display: none;
 }
 
@@ -953,12 +993,14 @@ MEDIA QUERIES
 }
 
 .help {
-  font-size: 1.2em;
+  margin-top: 120px;
+  font-size: 1.05em;
+  letter-spacing: 3px;
 }
 
 .talk {
   margin-top: 0;
-  font-size: 5.5em;
+  font-size: 3.8em;
   padding: 0;
 }
 
@@ -1009,6 +1051,21 @@ FIM
         iPhone 5
 
         ************************************/
+
+.project {
+  height: 330px;
+}
+
+.project_title {
+  font-size: 1.35em;
+  line-height: 1.5;
+}
+
+.project_description {
+  font-size: 1.05em;
+  margin: 12px auto 18px;
+  line-height: 1.6;
+}
 
 .nav-icon1 {
   margin-top: 23px;
@@ -1069,8 +1126,9 @@ FIM
 }
 
 .help {
-  margin-top: 50px;
+  margin-top: 55px;
   font-size: 1em;
+  letter-spacing: 3px;
 }
 
 .talk {
@@ -1110,12 +1168,6 @@ FIM
   margin-bottom: 2px;
 }
 
-.line {
-  background-size: 600px 30px;
-  width: 200px;
-  height: 12px;
-}
-
 
 }
 
@@ -1143,6 +1195,20 @@ FIM
         iPhone 6
 
         ************************************/
+
+.project {
+  height: 360px;
+}
+
+.project_title {
+  font-size: 1.35em;
+  line-height: 1.5;
+}
+
+.project_description {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
 
 .nav-icon1 {
   margin-top: 23px;
@@ -1179,7 +1245,7 @@ FIM
 }
 
 .help {
-  margin-top: 56px;
+  margin-top: 50px;
   font-size: 1em;
 }
 
@@ -1202,6 +1268,19 @@ FIM
 
         ************************************/
 
+.project {
+  height: 380px;
+}
+
+.project_title {
+  font-size: 1.35em;
+  line-height: 1.5;
+}
+
+.project_description {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
 
 .nav-icon1 {
   margin-top: 25px;
@@ -1240,7 +1319,7 @@ FIM
 }
 
 .help {
-  margin-top: 60px;
+  margin-top: 55px;
   font-size: 1em;
 }
 
