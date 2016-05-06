@@ -996,7 +996,7 @@ object {
 }
 
 .studio {
-  height: 1870px;
+  height: 1910px;
   padding: 60px 2%;
 }
 
@@ -1006,7 +1006,6 @@ object {
 }
 
 .values_Title {
-    margin-top: 60px;
   margin-bottom: 25px;
 }
 
@@ -1131,7 +1130,7 @@ object {
 }
 
 .studio {
-  height: 1870px;
+  height: 2080px;
   padding: 60px 2%;
 }
 
@@ -1141,7 +1140,6 @@ object {
 }
 
 .values_Title {
-  margin-top: 190px;
   margin-bottom: 25px;
 }
 
@@ -1295,7 +1293,7 @@ FIM
 }
 
 .studio {
-  height: 2180px;
+  height: 2200px;
   padding: 60px 2%;
 }
 
@@ -1319,7 +1317,7 @@ FIM
 }
 
 .featureTitle {
-  font-size: 1.15em;
+  font-size: 1.2em;
   text-align: center;
 }
 
@@ -1460,12 +1458,16 @@ FIM
 }
 
 .studio {
-  height: 1950px;
+  height: 2155px;
+}
+
+.featureListItem__description { 
 }
 
 .value {
   height: 200px;
   width: 450px;
+  font-size: 1.1em; 
 }
 
 .values {
@@ -1476,6 +1478,7 @@ FIM
   padding-right: 5%;
   padding-left: 5%;
 }
+
 
 .help {
   margin-top: 56px;
@@ -1539,7 +1542,7 @@ FIM
 }
 
 .studio {
-  height: 1940px;
+  height: 2220px;
 }
 
 .value {
@@ -1550,6 +1553,12 @@ FIM
 .value-description {
   padding-right: 8%;
   padding-left: 8%;
+}
+
+.studio-description, .featureListItem__description {
+  font-size: 1.1em;  
+  padding-right: 6% ;
+  padding-left: 6%;
 }
 
 .help {
