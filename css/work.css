@@ -494,7 +494,7 @@ li:last-child {
 .project {
   margin: 6% auto;
   background: red;
-  max-width: 100%;
+  max-width: 1440px;
   height: 622px;
   display: -webkit-flex;
   display: -moz-flex;
