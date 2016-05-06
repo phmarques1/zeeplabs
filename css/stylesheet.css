@@ -1566,6 +1566,10 @@ FIM
   float: left;
 }
 
+.nav-icon1 span {
+  height: 2px;
+}
+
 .nav-icon1 span:nth-child(1) {
   top: 11px;
 }
@@ -1573,7 +1577,6 @@ FIM
 .nav-icon1 span:nth-child(3) {
   top: 25px;
 }
-
 
 .contact-top, .contact-fixed {
   display: none;
