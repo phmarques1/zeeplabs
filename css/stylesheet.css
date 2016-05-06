@@ -1345,14 +1345,6 @@ MEDIA QUERIES
   height: 2px;
 }
 
-.nav-icon1 span:nth-child(1) {
-  top: 11px;
-}
-
-.nav-icon1 span:nth-child(3) {
-  top: 25px;
-}
-
 .menu-ul, .menu-fixed {
   display: none;
 }
