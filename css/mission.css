@@ -525,7 +525,7 @@ blockquote::before{
   color: #000;
   /*Positioning*/
   position: absolute;
-  left: 10px;
+  left: 15px;
   top:5px;
 }
 
