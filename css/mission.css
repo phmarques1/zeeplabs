@@ -387,7 +387,6 @@ li:last-child {
   letter-spacing: 1.3px;
 }
 
-
 .background {
     background: url('../img/bg-mission.jpg');
     background-repeat:no-repeat;
@@ -468,7 +467,6 @@ li:last-child {
   line-height: 30px;
 }
 
-
 .mission-container {
   max-width: 770px;
   font-size: 1.05em;
@@ -481,7 +479,7 @@ li:last-child {
 
 .crazy-ones {
   max-width: 670px;
-  margin: -5px auto 40px;
+  margin: -5px auto 32px;
   padding-top: 0;
   text-align: center;
   color: #000;
@@ -498,7 +496,7 @@ li:last-child {
 
 
 
-blockquote{
+blockquote {
   display:block;
   background: #fff;
   padding: 40px 40px 40px 55px;
